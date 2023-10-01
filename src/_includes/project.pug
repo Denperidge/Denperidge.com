@@ -4,3 +4,14 @@ tags: project
 ---
 
 main !{content}
+
+aside 
+    h2 Repositories:
+    ul
+        each repo in repos
+            -
+                let url = repo.url.toLowerCase();
+                let host;
+                if (url.includes("github")) { host = "GitHub" } 
+            li 
+                a(href=repo.url) View the !{repo.name} repo on !{host}
