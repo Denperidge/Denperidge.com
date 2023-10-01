@@ -1,0 +1,9 @@
+---
+layout: page.pug
+title: Projects
+eleventyImport:
+    collections: ["project"]
+---
+
+each project in collections.project
+    a(href=project.url)=project.data.title

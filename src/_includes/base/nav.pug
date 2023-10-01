@@ -1,0 +1,13 @@
+nav
+    ul 
+        - console.log(collections.page)
+        each page in collections.page
+            li 
+                a(href=page.url)=page.data.title
+
+
+//- nav
+//-     ul
+//-         each href, title in nav
+//-             a(href=href)
+//-                 li=title
