@@ -10,6 +10,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@catppuccin/palette": "^0.2.0",
+    "eleventy-sass": "^2.2.3",
     "js-yaml": "^4.1.0",
     "sass": "^1.68.0"
   }

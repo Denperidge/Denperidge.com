@@ -1,3 +1,6 @@
+@import "mocha";
+// url(~@catppuccin/palette/scss/)
+
 .sr-only {
     position: absolute;
     left: -10000px;
@@ -5,4 +8,39 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    color: $text;
+    background-size: cover;
+    background-color: #60547a;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-image: url("/assets/evening-sky.png");
+}
+
+a {
+    text-underline-offset: 2.5px;
+    &:link {
+        color: $red;
+        text-decoration-color: $red;
+
+    }
+    &:visited {
+        color: $lavender;
+        text-decoration-color: $lavender;
+    }
+    &:hover {
+        color: $flamingo;
+        text-decoration-color: $flamingo;
+    }
+    &:active {
+        color: $blue;
+        text-decoration-color: $blue;
+
+    }
 }
