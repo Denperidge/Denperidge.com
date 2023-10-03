@@ -1,6 +1,8 @@
 ---
 layout: page.pug
 title: "Home"
+stylesheet: styles/pages/index.css
+
 ---
 
 main#main
@@ -15,4 +17,8 @@ main#main
         each href, title in links
             li #{title}:&nbsp;
                 a(href=href)=href
+
+    
+aside
+    img.profile-pic(src="https://avatars.githubusercontent.com/u/27348469" alt="My GitHub profile picture: fanart of Dendy from OK K.O. They've got a yellow outfit with green straps, and big round scientist goggles around their eyes. Their brown hair is a bit poofy and reaches the bottom of their head. They're smiling!")
 
