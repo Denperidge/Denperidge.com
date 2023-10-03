@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
     */
    eleventyConfig.addPlugin(eleventySass, {
     sass: {
-        loadPaths: ["node_modules/@catppuccin/palette/scss"]
+        loadPaths: ["node_modules"]
     }
    });
     

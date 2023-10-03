@@ -1,14 +1,12 @@
-@import "mocha";
-// url(~@catppuccin/palette/scss/)
+@import "@catppuccin/palette/scss/mocha";
+@import "styles/accessibility";
 
-.sr-only {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+* {
+    outline-offset: 2.5px;
+    outline-color: $rosewater;
 }
+
+
 
 html, body {
     min-height: 100%;
@@ -23,8 +21,19 @@ body {
     background-image: url("/assets/evening-sky.png");
 }
 
+nav {
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        li {
+
+        }
+    }
+}
+
 a {
-    text-underline-offset: 2.5px;
+    text-underline-offset: 3.5px;
     &:link {
         color: $red;
         text-decoration-color: $red;
@@ -41,6 +50,5 @@ a {
     &:active {
         color: $blue;
         text-decoration-color: $blue;
-
     }
 }
