@@ -1,0 +1,5 @@
+- name: Build & deploy
+  uses: TartanLlama/actions-eleventy@v1.2
+  with:
+    args: --output dist
+    install_dependencies: true
