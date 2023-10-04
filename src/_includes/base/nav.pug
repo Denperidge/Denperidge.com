@@ -2,8 +2,8 @@ nav
     ul 
         - console.log(collections.page)
         each page in collections.page
-            li 
-                a(href=page.url)=page.data.title
+            a(href=page.url)
+                li=page.data.title
 
 
 //- nav
