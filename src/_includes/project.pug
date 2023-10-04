@@ -3,9 +3,18 @@ layout: base/base.pug
 tags: project
 ---
 
-main !{content}
+main
+    h1=title
+    
+    h2.sr-only Intro
+    p=intro
+    
+    h2 Achievements
+    ul
+        each achievement in achievements 
+            li=achievement 
+    // !{content}
 
-aside 
     h2 Repositories:
     ul
         each repo in repos

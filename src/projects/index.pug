@@ -5,5 +5,10 @@ eleventyImport:
     collections: ["project"]
 ---
 
-each project in collections.project
-    a(href=project.url)=project.data.title
+main#main
+    h1 My projects!
+    each project in collections.project
+        section
+            h2
+                a(href=project.url)=project.data.title
+            p=project.data.description
