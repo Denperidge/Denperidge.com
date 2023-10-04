@@ -1,5 +1,5 @@
 ---
-layout: page.pug
+layout: page.md
 title: Credit
 ---
 
