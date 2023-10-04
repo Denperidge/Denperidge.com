@@ -1,6 +1,7 @@
-@import "@catppuccin/palette/scss/mocha";
-@import "styles/accessibility";
-@import "styles/Catamaran";
+@import "_styles/variables";
+@import "_styles/accessibility";
+@import "_styles/nav";
+@import "_styles/Catamaran";
 
 * {
     outline-offset: 2.5px;
@@ -37,26 +38,9 @@ body {
 
 }
 
-nav {
-    background-color: rgba($base, 0.7);
-    ul {
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li {
-            min-width: 150px;
-            margin: 20px;
-
-        }
-        a {
-            padding: 20px;
-            
-        }
-    }
+main {
+    width: 80%;
+    margin: auto;
 }
 
 a {

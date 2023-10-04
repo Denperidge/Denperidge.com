@@ -5,7 +5,7 @@ const eleventySass = require("eleventy-sass");
 module.exports = function(eleventyConfig) {
     eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
-    eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPassthroughCopy("src/_assets");
 
     /*
     eleventyConfig.addTemplateFormats("scss")
