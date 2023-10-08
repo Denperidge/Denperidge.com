@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
     eleventyConfig.addPassthroughCopy("src/_assets");
+    eleventyConfig.addPassthroughCopy("src/.well-known");
 
     /*
     eleventyConfig.addTemplateFormats("scss")
