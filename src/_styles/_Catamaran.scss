@@ -1,6 +1,6 @@
 @font-face {
     font-family: Catamaran;
-    src: url("/assets/fonts/Catamaran/Catamaran-Regular.ttf")
+    src: url("/_assets/fonts/Catamaran/Catamaran-Regular.ttf")
 }
 
 $weights: "Black", "Bold", "ExtraBold", "ExtraLight", "Light", "Medium", "SemiBold", "Thin";
@@ -8,7 +8,7 @@ $weights: "Black", "Bold", "ExtraBold", "ExtraLight", "Light", "Medium", "SemiBo
     @font-face {
         font-family: Catamaran;
         font-weight: $weight;
-        src: url("/assets/fonts/Catamaran/Catamaran-#{$weight}.ttf")
+        src: url("/_assets/fonts/Catamaran/Catamaran-#{$weight}.ttf")
     }
 }
 
