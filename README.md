@@ -1,5 +1,5 @@
 # Denperidge.com
-The repository for my website, [denperidge.com](https://denperidge.com)!
+The repository for my website, [denperidge.com](https://denperidge.com)! The goal is for it to function as a webportal, resume and blog. Wow.
 
 ## How-to
 ### Run locally
