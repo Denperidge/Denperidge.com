@@ -6,10 +6,16 @@ stylesheet: pages/index.css
 ---
 
 main#main
-    h1 Denperidge.com 
-    h2.sr-only Introduction
-    p Hi! I'm Denperidge
-    p Equally a professional programmer as a hobbyist programmer as an idiot
+    p Hi! I'm
+    section#denperidge
+        h1 Denperidge
+        each part in ["Den", "en", "perid", "idge"]
+            a.hover(href="#" aria-hidden="True" class=part)=part
+        article Dendy, from OK K.O.!
+        article Entrapta, from She-Ra!
+        article Peridot, from Steven Universe!
+        article Pidge, from Voltron!
+
 
 
     section

@@ -1,3 +1,4 @@
+@import "../variables";
 
 body {
     display: flex;
@@ -16,11 +17,43 @@ body {
     }
 }
 
-main {
-}
-
 aside {
     img {
         width: 100%;
     }
+}
+
+#denperidge {
+    position: relative;
+
+    h1, .hover {
+        font-size: 5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: $d1;
+    }
+
+    .hover {
+        position: absolute;
+        top: 0;
+        &.Den {
+            left: 0;
+            &:hover {
+                color: #eae34e;
+                z-index: 10;
+            }
+        }
+        &.en {
+            left: 3.4rem;
+        }
+
+        &.perid {
+            left: 8.5rem;
+        }
+
+        &.idge {
+            left: 15.3rem;
+        }
+    }
+
 }
