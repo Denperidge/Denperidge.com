@@ -5,7 +5,7 @@ nav {
     a {
         color: $l1;
     }
-    background-color: $d1;
+    background-color: $d2;
     ul {
         text-align: center;
         display: flex;
@@ -16,12 +16,9 @@ nav {
         margin: 0;
         li {
             min-width: 150px;
-            
-
         }
         a {
             padding: 20px;
-            
         }
     }
 }
