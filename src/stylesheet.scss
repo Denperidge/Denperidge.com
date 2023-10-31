@@ -11,9 +11,10 @@
 html {
     height: 100%;
 
-    background-image: url("/assets/evening-sky.png");
+    //background-image: url("/assets/evening-sky.png");
     background-size: cover;
-    background-color: #60547a;
+    color: $d1;
+    background-color: $l1;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -21,16 +22,18 @@ html {
 body {
     min-height: 100%;
 
-    padding: 0;
+    //padding: 0;
     margin: 0;
+    padding: 0 5%;
+
 
     font-family: "Catamaran", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
 
-    color: $text;
+    //color: $text;
     background-size: cover;
     //background-color: #60547a;
-    background-color: rgba($base, 0.3);
+    //background-color: rgba($base, 0.3);
     background-position: center center;
     background-repeat: no-repeat;
     //background: linear-gradient(120deg, $base, $surface1 90%, #f8f4a3 90%)
@@ -39,27 +42,25 @@ body {
 }
 
 main {
-    width: 80%;
-    margin: auto;
+    //width: 80%;
+    //margin: auto;
 }
 
 a {
     text-underline-offset: 3.5px;
     &:link {
-        color: $red;
-        text-decoration-color: $red;
+        text-decoration-color: $d1;
 
     }
     &:visited {
-        color: $lavender;
-        text-decoration-color: $lavender;
+        text-decoration-color: $d2;
     }
     &:hover {
-        color: $flamingo;
-        text-decoration-color: $flamingo;
+        color: $l2;
+        text-decoration-color: $l2;
     }
     &:active {
-        color: $blue;
-        text-decoration-color: $blue;
+        color: $d2;
+        text-decoration-color: $d2;
     }
 }

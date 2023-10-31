@@ -1,7 +1,11 @@
 @import "variables";
 
 nav {
-    background-color: rgba($base, 0.7);
+    color: $l1;
+    a {
+        color: $l1;
+    }
+    background-color: $d1;
     ul {
         text-align: center;
         display: flex;
