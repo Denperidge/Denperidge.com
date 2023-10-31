@@ -33,6 +33,27 @@ aside {
         color: $d1;
     }
 
+    span {
+        /*
+        @function meow($parentElem, $startIndex, $endIndex) {
+            @for $i from 1 through 2 {
+                ul:nth-child(#{$startIndex}) {
+
+                }
+            }
+        }
+        */
+        /*
+        &:nth-child(1):hover, &:nth-child(1):hover ~ :nth-child(2), &:nth-child(1):hover ~ :nth-child(3) {
+            color: red;
+        } */
+        /*&:nth-child(1), &:nth-child(2) {
+            :nth-child(1) {
+                color: red;
+            }
+        }*/
+    }
+
     .hover {
         position: absolute;
         top: 0;

@@ -8,9 +8,15 @@ stylesheet: pages/index.css
 main#main
     p Hi! I'm
     section#denperidge
-        h1 Denperidge
-        each part in ["Den", "en", "perid", "idge"]
+        //h1 
+            each letter in "Denperidge"
+                span=letter
+        //each part in ["Den", "en", "perid", "idge"]
             a.hover(href="#" aria-hidden="True" class=part)=part
+        span.D D
+        span.en en
+        span.peri peri
+        span.dge dge
         article Dendy, from OK K.O.!
         article Entrapta, from She-Ra!
         article Peridot, from Steven Universe!
