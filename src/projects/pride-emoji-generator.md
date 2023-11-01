@@ -1,6 +1,6 @@
 ---
 layout: project.pug
-title: Denperidge.com
+title: Pride Emoji Generator
 description: This website!
 
 intro:

@@ -2,13 +2,30 @@
 layout: page.pug
 title: Projects
 eleventyImport:
-    collections: ["project"]
+    collections: ["project", "active", "archive"]
 ---
+
+mixin project(project)
+    section
+        h3
+            a(href=project.url)=project.data.title
+        p=project.data.description
 
 main#main
     h1 My projects!
+
+    each project in collections.active
+        +project(project)
+
+    hr
+
     each project in collections.project
-        section
-            h2
-                a(href=project.url)=project.data.title
-            p=project.data.description
+        if !project.archive && !project.active
+            +project(project)
+    
+    hr
+
+    h2 Archive
+
+    each project in collections.archive
+        +project(project)

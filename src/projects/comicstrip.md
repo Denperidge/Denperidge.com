@@ -1,6 +1,6 @@
 ---
 layout: project.pug
-title: Denperidge.com
+title: (Fork) comicstrip
 description: This website!
 
 intro:
@@ -12,5 +12,8 @@ links:
       url: https://github.com/Denperidge/denperidge.github.io
 
 achievements:
+  - 
+
+lessons:
   - 
 ---

@@ -3,24 +3,35 @@ layout: base/base.pug
 tags: project
 ---
 
+mixin things(property, title)
+    if property
+        h2=title
+        ul
+            each prop in property 
+                li=prop 
+
 main
     h1=title
     
     h2.sr-only Intro
     p=intro
     
-    h2 Achievements
-    ul
-        each achievement in achievements 
-            li=achievement 
-    // !{content}
+    +things(good_things, "Good things")
 
-    h2 Repositories:
-    ul
-        each repo in repos
-            -
-                let url = repo.url.toLowerCase();
-                let host;
-                if (url.includes("github")) { host = "GitHub" } 
-            li 
-                a(href=repo.url) View the !{repo.name} repo on !{host}
+    if hrefs
+        h2 Links:
+        ul
+            each link in hrefs
+                -
+                    let url = link.url.toLowerCase();
+                    let host = null;
+                    let text;
+                    if (url.includes("github")) { host = "GitHub" }
+
+                    if (host) { text = `View the ${link.name} repo on ${host}`; }
+                    else { text = `Visit the ${title} website`; }
+                li 
+                    a(href=link.url)=text
+    
+
+    //!{content}

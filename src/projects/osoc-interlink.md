@@ -1,7 +1,8 @@
 ---
 layout: project.pug
-title: Denperidge.com
+title: OSOC Interlink
 description: This website!
+tags: archive
 
 intro:
     Now, you may notice this website is not coded as one might expect.

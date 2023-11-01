@@ -1,6 +1,6 @@
 ---
 layout: project.pug
-title: Denperidge.com
+title: Neonpastel projects
 description: This website!
 
 intro:

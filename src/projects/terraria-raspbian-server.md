@@ -18,7 +18,7 @@ achievements:
     - Updating the script for newer versions should only require one line to be changed
     - A README including specific considerations, e.g. swapfile, port forwarding...
 
-repos:
+links:
     - name: Terraria Raspbian Server
       url: https://github.com/Denperidge/terraria-raspbian-server
 
