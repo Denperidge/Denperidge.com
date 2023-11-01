@@ -33,16 +33,38 @@ aside {
         color: $d1;
     }
 
-    span {
-        /*
-        @function meow($parentElem, $startIndex, $endIndex) {
-            @for $i from 1 through 2 {
-                ul:nth-child(#{$startIndex}) {
+    .D:hover, .D:hover + .en {
+        // Dendy
+        color: aqua;
+    }
 
-                }
-            }
-        }
-        */
+    .en:hover {
+        // Entrapta
+        color: purple;
+    }
+    .per:hover,
+    .per:hover + .i,
+    .per:hover ~ .d,
+    .i:hover,
+    .i:hover + .per,
+    .i:hover ~ .d
+     {
+        // Peridot
+        color: green;
+    }
+
+    .d:hover,
+    .d:hover ~ .i,
+    .d:hover ~ .ge,
+    .ge:hover,
+    .ge:hover ~ .d {
+        // Pidge
+        color: lime;
+    }
+
+
+    span {
+       
         /*
         &:nth-child(1):hover, &:nth-child(1):hover ~ :nth-child(2), &:nth-child(1):hover ~ :nth-child(3) {
             color: red;
