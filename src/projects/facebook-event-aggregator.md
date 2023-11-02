@@ -5,7 +5,8 @@ description: Scrape all upcoming events from specific FB pages, export them to a
 tags: active
 
 intro: Facebook and Meta have enough ethical problems to scare most people. However, the widespread adoption of their platforms necessitates their existence for being made aware of events. What if you wanted to be kept up to date on every event, and also not be reliant on Facebook? 
-links:
+
+hrefs:
     - name: Facebook-Event-Aggregator
       url: https://github.com/Denperidge/facebook-event-aggregator
 
