@@ -1,13 +1,7 @@
 nav
-    ul 
-        - console.log(collections.page)
+    ul
+        - collections.page.sort((pageA, pageB) => pageA.data.order - pageB.data.order);  // From https://stackoverflow.com/a/979289a
         each page in collections.page
             a(href=page.url)
                 li=page.data.title
 
-
-//- nav
-//-     ul
-//-         each href, title in nav
-//-             a(href=href)
-//-                 li=title
