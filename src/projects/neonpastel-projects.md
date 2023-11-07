@@ -1,16 +1,16 @@
 ---
 layout: project.pug
 title: Neonpastel projects
-description: This website!
+description: A small collection of self-indulgent webcore projects
+tags: neonpastel
 
 intro:
-    Now, you may notice this website is not coded as one might expect.
-    You may notice a lack of it being an SPA.
+    If you have read my manifesto pages, you may have become aware of my love for webcore;
+    creating things for the joy of creation and self expression.
+    These are hosted & lniked under the neonpastel.net website and moniker!
 
-links:
-    - name: Denperidge.com (denperidge.github.io)
-      url: https://github.com/Denperidge/denperidge.github.io
-
-achievements:
-  - 
+hrefs:
+    - url: https://www.neonpastel.net
+    - name: www.neonpastel.net
+      url: https://github.com/Denperidge/www.neonpastel.net
 ---
