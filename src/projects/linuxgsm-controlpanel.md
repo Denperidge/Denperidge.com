@@ -1,14 +1,22 @@
 ---
 layout: project.pug
-title: Facebook Event Aggregator
-description: This website!
-tags: active
+title: LinuxGSM-Controlpanel
+description: Proof of concept for a Linux Game Server Manager web GUI
 
-intro:
-links:
-    - name: Denperidge.com (denperidge.github.io)
-      url: https://github.com/Denperidge/denperidge.github.io
+intro: 
+  A web interface to start and stop game servers managed through LinuxGSM,
+  made with Django!
 
-achievements:
-  - 
+hrefs:
+    - name: LinuxGSM-Controlpanel
+      url: https://github.com/Denperidge/LinuxGSM-Controlpanel
+
+good_things:
+  - Nice little install script handles most things
+  - It works!
+  - The manual management for adding new servers allows more fine-tuned control than automatic detection
+
+bad_things:
+  - Only handles starting & stopping
+  - The manual management for adding new servers requires more setup time
 ---
