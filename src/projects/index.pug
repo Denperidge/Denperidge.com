@@ -7,7 +7,7 @@ eleventyImport:
 ---
 
 mixin project(project)
-    section
+    li
         h3
             a(href=project.url)=project.data.title
         p=project.data.description
@@ -15,27 +15,30 @@ mixin project(project)
 main#main
     h1 My projects!
 
-    each project in collections.active
-        +project(project)
+    ul
+        each project in collections.active
+            +project(project)
 
     hr
 
-    - const otherProjects = collections.project.filter((project) => project.data.tags.indexOf("archive") < 0 && project.data.tags.indexOf("active") < 0 && project.data.tags.indexOf("neonpastel") < 0);
-    each project in otherProjects
-        - console.log(project.data.tags)
-        if !project.data.tags.archive && !project.data.tags.active && !project.data.tags.neonpastel
-            +project(project)
-    
+    ul
+        - const otherProjects = collections.project.filter((project) => project.data.tags.indexOf("archive") < 0 && project.data.tags.indexOf("active") < 0 && project.data.tags.indexOf("neonpastel") < 0);
+        each project in otherProjects
+            - console.log(project.data.tags)
+            if !project.data.tags.archive && !project.data.tags.active && !project.data.tags.neonpastel
+                +project(project)
+        
     hr
 
     h2 Neonpastel
 
-    each project in collections.neonpastel 
-        +project(project)
+    ul
+        each project in collections.neonpastel 
+            +project(project)
 
     hr
 
     h2 Archived
-
-    each project in collections.archive
-        +project(project)
+    ul
+        each project in collections.archive
+            +project(project)
