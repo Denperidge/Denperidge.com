@@ -3,9 +3,6 @@
 nav {
     background-color: $d2;
     color: $l1;
-    a {
-        color: $l1;
-    }
 
     box-sizing: border-box;
     outline: 1px groove $l1;
@@ -23,7 +20,26 @@ nav {
             min-width: 150px;
         }
         a {
-            padding: 20px;
+            padding: 10px;
+            margin: 10px;
+
+            &:link {
+                color: $l1;
+                text-decoration-color: $l1;
+            }
+
+            &:visited {
+                color: $l3;
+                text-decoration-color: $l3;
+            }
+            &:hover {
+                color: $l2;
+                text-decoration-color: $l2;
+            }
+            &:active {
+                color: $d1;
+                text-decoration-color: $d1;
+            }
         }
     }
 }
