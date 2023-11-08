@@ -12,11 +12,14 @@ html {
     height: 100%;
 
     //background-image: url("/assets/evening-sky.png");
-    background-size: cover;
+    background-size: 100%;
     color: $d1;
     background-color: $l1;
+    background: linear-gradient(120deg, $l1 60%, $d2);
     background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {

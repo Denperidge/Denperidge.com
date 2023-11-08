@@ -1,11 +1,16 @@
 @import "variables";
 
 nav {
+    background-color: $d2;
     color: $l1;
     a {
         color: $l1;
     }
-    background-color: $d2;
+
+    box-sizing: border-box;
+    outline: 1px groove $l1;
+    outline-offset: -5px;
+
     ul {
         text-align: center;
         display: flex;
