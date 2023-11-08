@@ -1,16 +1,25 @@
 ---
 layout: project.pug
-title: (Archived) xPortable
-description: This website!
+title: xPortable
+description: Turn your phone a functional game controller, without installing an app on it.
+tags: archive
 
 intro:
-    Now, you may notice this website is not coded as one might expect.
-    You may notice a lack of it being an SPA.
+    The Jackbox party pack games have the unique feature of anyone's phone being easily
+    and quickly useable as a controller for their games. But what if you could have that
+    functionality for nearly every controller supported game?
 
 links:
-    - name: Denperidge.com (denperidge.github.io)
-      url: https://github.com/Denperidge/denperidge.github.io
+    - name: xPortable
+      url: https://github.com/Denperidge/xPortable
 
-achievements:
-  - 
+good_things:
+  - Only an install on the Windows PC, but none on the phones!
+  - It worked!
+  - Thanks to the external driver library used, it popped up like a regular Xbox360 controller.
+
+bad_things:
+  - Only works on Windows
+  - Due to being on a touch screen, there are some limitations to weird simultaneous button inputs
+  - No README
 ---
