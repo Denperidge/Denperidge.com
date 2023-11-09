@@ -1,12 +1,50 @@
 @import "variables";
 
-nav {
+header {
     background-color: $d2;
     color: $l1;
 
     box-sizing: border-box;
     outline: 1px groove $l1;
     outline-offset: -5px;
+
+    #buttons {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: calc(100% - 10px);
+
+        width: 200px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            height: 100%;
+
+            background: none;
+            border: none;
+
+            cursor: pointer;
+
+            &:hover {
+                filter: saturate(200%)
+            }
+
+            flex: 1;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+}
+
+nav {
+    width: 80%;
+
 
     ul {
         text-align: center;

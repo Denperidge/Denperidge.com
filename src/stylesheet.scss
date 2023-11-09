@@ -5,7 +5,7 @@
 
 * {
     outline-offset: 2.5px;
-    outline-color: $rosewater;
+    outline-color: $d1;
 }
 
 html {
@@ -32,7 +32,7 @@ body {
 
 
     font-family: "Catamaran", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: larger;
+    font-size: 1.2rem;
 
 }
 
@@ -64,8 +64,8 @@ header {
 
     background-color: $l1;
 }
-main {
-
+main, aside {
+    margin: auto;
 }
 
 
