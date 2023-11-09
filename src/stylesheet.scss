@@ -20,13 +20,12 @@ html {
 body {
     min-height: 100%;
     margin: 0;
+
+    padding: 20px;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $l4;
 
     background-image: url("/assets/svgs/background_tile.svg");
-    background-color: #90D0C2;
     background-size: 40%;
 
 
@@ -38,36 +37,8 @@ body {
 
 }
 
-header, #content {
-    left: 10%;
-    right: 10%;
-}
-header {
-    position: absolute;
-    bottom: 80%;
-
-    //height: 1rem;
-}
-#content {
-    position: absolute;
-    top: 20%;
-    bottom: 20%;
-    
-    padding: 20px;
-    
-    overflow-y: auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    border: 5px solid $d2;
-    border-top: none;
-
-    background-color: $l1;
-}
-main, aside {
-    margin: auto;
+body > main, body > section, body > aside {
+    background-color: rgba($l4, 0.7);
 }
 
 
@@ -75,7 +46,6 @@ a {
     text-underline-offset: 3.5px;
     &:link {
         text-decoration-color: $d1;
-
     }
     &:visited {
         text-decoration-color: $d2;

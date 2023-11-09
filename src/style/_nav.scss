@@ -1,17 +1,69 @@
 @import "variables";
 
 header {
-    background-color: $d2;
     color: $l1;
 
     box-sizing: border-box;
     outline: 1px groove $l1;
     outline-offset: -5px;
+    position: relative;
 
+    background-image: url("/assets/svgs/header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    
+
+    a {
+        font-size: 1.4rem;
+        &:link {
+            color: $d1;
+            text-decoration-color: $d1;
+        }
+
+        &:visited {
+            color: $d2;
+            text-decoration-color: $d2;
+        }
+        &:hover {
+            color: $l2;
+            text-decoration-color: $l2;
+        }
+        &:active {
+            color: $l4;
+            text-decoration-color: $l4;
+        }
+    }
+
+
+    nav {
+        width: 80%;
+    
+        ul {
+            padding: 0;
+            margin: 0;
+    
+            text-align: center;
+            list-style: none;
+    
+            > * {
+                min-width: 150px;
+                float: left;
+                padding: 10px;
+                margin: 10px;
+                margin-right: 40px;
+
+            }
+        }
+    }
+
+    
     #buttons {
         position: absolute;
         top: 5px;
-        right: 5px;
+        right: 45px;
         height: calc(100% - 10px);
 
         width: 200px;
@@ -40,44 +92,4 @@ header {
         }
     }
 
-}
-
-nav {
-    width: 80%;
-
-
-    ul {
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li {
-            min-width: 150px;
-        }
-        a {
-            padding: 10px;
-            margin: 10px;
-
-            &:link {
-                color: $l1;
-                text-decoration-color: $l1;
-            }
-
-            &:visited {
-                color: $l3;
-                text-decoration-color: $l3;
-            }
-            &:hover {
-                color: $l2;
-                text-decoration-color: $l2;
-            }
-            &:active {
-                color: $d1;
-                text-decoration-color: $d1;
-            }
-        }
-    }
 }
