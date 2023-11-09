@@ -25,6 +25,7 @@ html(lang="en")
 
 
     body
+        //div#window
         header 
             a(href="#main").skip-link Skip to main content
             nav 
@@ -34,5 +35,6 @@ html(lang="en")
                         a(href=page.url)
                             li=page.data.title
         
-        | !{content}
-        
+        div#content
+            | !{content}
+    
