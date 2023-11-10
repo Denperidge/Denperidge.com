@@ -23,6 +23,10 @@ main#main
             span#ge ge
         
         article#explanation
+            each character in characters 
+                section(id=character.name)
+                    img(src=`/assets/characters/${character.name}.png` alt=character.alt)
+                    p=character.description
 
     section
         p.
