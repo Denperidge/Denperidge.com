@@ -6,6 +6,7 @@ body {
     justify-content: space-around;
     header {
         flex-basis: 100%;
+        flex-shrink: 1;
     }
     main {
         flex-basis: 50%;
