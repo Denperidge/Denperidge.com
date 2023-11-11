@@ -1,23 +1,57 @@
 - name: Dendy
-  alt: Meow
-  description: Meow
+  alt:
+    A screenshot from OK K.O.
+    It shows a person whose got a yellow outfit with green straps,
+    and big round scientist goggles around their eyes.
+    Their brown hair is straight reaches the bottom of their head.
+    They're looking up from their blue holographic screen, and is smiling!
+  description:
+    Now, this is already a doozy. Get ready for me being sappy.
+    I have not been able to watch OK K.O. season 1 episode 7 "I am Dendy" without crying.
+    Seeing this little nerdy kid viewing everything through the lense of code & data,
+    doing their best to help those - and understanding the world  - around them?
+    Tears. At least from me. Maybe not from you.
+
   colour: yellow
   colourtext: Den
 
 - name: Entrapta
-  alt: Meow
-  description: Meow
+  alt:
+    A screenshot from She-Ra and the Princesses of Power.
+    It shows a girl with very long and wide purple twintails, red eyes, and smiling upwards.
+    She has a futuristic purple & white outfit on, gloves, and a black welding mask with red-pink eyes. 
+  description:
+    Entrapta is in her head yet extroverted, incredibly curious but chaotic.
+    Testing to see if things are possible for the sake of their possibility or interest.
+    Adoring tech a bit too much. But that's okay. Look at her go!
   colour: purple
   colourtext: en
 
 - name: Peridot
-  alt: Meow
-  description: Meow
+  alt:
+    A screenshot from Steven Universe.
+    It shows a girl with green skin, and wide + high yellow hair in a triangle shape.
+    She's wearing a dark green shirt with a star in the middle, and a angular glasses that surpass the sides of her head.
+    They're making two peace signs, smiling and winking.
+  description:
+    Imagine crash landing on earth with a framework that you later on discover is bad.
+    Using your technological know-how to help those around you.
+    Sitting in the toilet and flushing it so you rotate around.
+    
+    Please note that I have not personally experienced all of these.
   colour: lime
   colourtext: perid
 
 - name: Pidge
-  alt: Meow
-  description: Meow
+  alt:
+    A screenshot from Voltron Legendary Defender.
+    It shows a girl with round glasses and slightly poofy brown hair to her neck.
+    She's looking sideways, seemingly in conversation.
+    She's wearing a green hoodie with a orange strip on the neck and black accents.
+  description:
+    Pidge is a tech girl at heart, pretending to not be a girl for the acceptance of those around her.
+    No that totally didn't hit me as a truck down the road. But in the pilot episode, she learns to
+    appreciate the beauty and intricacies of trees, life, and nature. Something that we all oughta do.
+    Me included.
   colour: green
   colourtext: idge

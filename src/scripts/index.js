@@ -34,13 +34,13 @@ function addLetterColours(e, character) {
     let x, y;
 
     if (e.type == "mousemove") {
-        x = e.layerX;
-        y = e.layerY + 25;
+        x = e.layerX + 75;
+        y = e.layerY - 200;
     } else {
         const pos = e.target.getBoundingClientRect();
         console.log(pos)
-        x = pos.left + 50;
-        y= pos.top - 350;
+        x = pos.left + 75;
+        y= pos.top - 450;
     }
     explanation.style.left = x + "px";
     explanation.style.top = y + "px";
@@ -55,8 +55,10 @@ function removeLetterColours() {
 
 function setupEvents(selector, character) {
     document.getElementById(selector).addEventListener("mousemove", (e) => { addLetterColours(e, character); });
-    document.getElementById(selector).addEventListener("focus", (e) => { addLetterColours(e, character); });
+    // Focusout first, then focus!
     document.getElementById(selector).addEventListener("focusout", removeLetterColours);
+    
+    document.getElementById(selector).addEventListener("focus", (e) => { addLetterColours(e, character); });
     document.addEventListener("mouseover", (e) => {
         if (e.target.parentNode.tagName != "H1") {
             removeLetterColours();
