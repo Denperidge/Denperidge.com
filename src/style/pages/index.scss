@@ -34,6 +34,12 @@ aside {
         color: $d1;
     }
 
+    section {
+        padding: 20px;
+        background-color: $l4;
+        border: 1px groove $d2;
+    }
+
     .D:hover, .D:hover + .en {
         // Dendy
         color: aqua;

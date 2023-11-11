@@ -1,15 +1,23 @@
 - name: Dendy
   alt: Meow
   description: Meow
+  colour: yellow
+  colourtext: Den
 
 - name: Entrapta
   alt: Meow
   description: Meow
+  colour: purple
+  colourtext: en
 
 - name: Peridot
   alt: Meow
   description: Meow
+  colour: lime
+  colourtext: perid
 
 - name: Pidge
   alt: Meow
   description: Meow
+  colour: green
+  colourtext: idge

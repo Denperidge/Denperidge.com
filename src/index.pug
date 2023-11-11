@@ -9,22 +9,15 @@ order: 0
 main#main
     p Hi! I'm
     section#denperidge
-        //h1 
-            each letter in "Denperidge"
-                span=letter
-        //each part in ["Den", "en", "perid", "idge"]
-            a.hover(href="#" aria-hidden="True" class=part)=part
         h1
-            span#D D
-            span#en en
-            span#per per
-            span#i i
-            span#d d
-            span#ge ge
-        
+            each letter in ["D", "en", "per", "i", "d", "ge"]
+                span(tabindex="0" id=letter)=letter
+
         article#explanation
+            h2 About my name
             each character in characters 
                 section(id=character.name)
+                    h3=character.name
                     img(src=`/assets/characters/${character.name}.png` alt=character.alt)
                     p=character.description
 
@@ -44,4 +37,6 @@ aside
                 a(href=href)=href
 
 
+script.
+    const characters = !{JSON.stringify(characters)};
 script(src="scripts/index.js")
