@@ -1,0 +1,9 @@
+// Based of https://stackoverflow.com/a/32721572
+mixin hidden(logo, title, large=false)
+    input(type="checkbox" id=`${logo}` tabindex="0")
+
+    label(for=`${logo}`, class=(large ? "large" : ""))
+        img(src=`/assets/resume/icons/${logo}.svg` alt=`Logo for ${logo}`)
+        h3= title 
+        if block 
+            block

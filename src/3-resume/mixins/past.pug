@@ -1,0 +1,29 @@
+
+mixin pe(years, title, employer, ...tasks)
+    article 
+        details
+            summary #{years} - #{title} - #{employer}
+            if block
+                block
+            
+
+
+mixin past(pastList)
+    //- ["2022 employment", "2020 emplyoment", ...]
+    - let pastTitles = Object.keys(pastList);
+    each pastTitle in pastTitles
+        article 
+            details 
+                //- summary=2022 employment
+                summary= pastTitle
+                //- ["My responsibilities", "What did I learn?", ...]
+                - let detailTitles = Object.keys(pastList[pastTitle])
+                for detailTitle in detailTitles
+                    //- h3=My responsibilities
+                    h3=detailTitle
+                    //- ["Task", "responsibility", ...]
+                    - let details = pastList[pastTitle][detailTitle]
+                    ul
+                        //-  - Task
+                        for detail in details
+                            li= detail 

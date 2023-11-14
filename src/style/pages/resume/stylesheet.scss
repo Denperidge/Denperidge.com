@@ -1,0 +1,116 @@
+@use 'vars';
+@use 'skillbar';
+@use 'tiles';
+@use 'hidden';
+
+
+body {
+    padding-top: 15px;
+    background-image: url(assets/pexels-madison-inouye-1831234.jpg); 
+    background-size: 100% 100%;
+}
+
+main, footer {
+    $sidepadding: 50px;
+    width: calc(75% - $sidepadding);
+    margin: auto;
+    padding: 7.5px $sidepadding;
+
+    font-family: 'Tiro Tamil', serif, system-ui, -apple-system;
+}
+
+main {
+    background-color: #fbfbfb;
+    box-shadow: 10px 0px 20px vars.$first, -10px -10px 20px vars.$first;
+}
+
+footer {
+    font-size: 90%;
+}
+
+section {
+    margin-bottom: 40px,
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Bodoni', serif, system-ui, -apple-system;
+}
+
+#projects {
+    > p {
+        text-align: center;
+    }
+}
+
+details {
+    margin: 12.5px;
+
+
+    border: 2px solid vars.$second;
+    border-radius: 4px;
+
+    summary {
+        padding: 12.5px;
+        cursor: pointer;
+
+    }
+
+    *:not(summary) {
+        margin: auto;
+        width: 80%;
+    }
+    @media (orientation: portrait) {
+        width: 100%;
+        *:not(summary) {
+            margin: auto;
+            width: 90%;
+        }
+        margin-left: 0;
+        margin-right: 0;
+        ul {
+            padding-left: 0;
+        }
+    }
+    
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    :last-child {
+        margin-bottom: 15px;
+    }
+
+  
+
+
+
+    [open] {
+        summary {
+            border-bottom: 1px solid vars.$second;
+        }
+    }
+}
+
+#about {
+    img {
+        height: 160px;  // Define to ensure no pop-in 
+    }
+    text-align: center;
+}
+
+@media print {
+    body {
+        padding: 0;
+    }
+    main {
+        box-shadow: none;
+        width: 100vw;
+    }
+}
+
+#learning {
+    ul { 
+        text-align: left;
+    }
+}

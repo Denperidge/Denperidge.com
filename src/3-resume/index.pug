@@ -1,0 +1,99 @@
+---
+layout: page.pug
+title: Resume
+permalink: "| resume/"
+order: 3
+stylesheet: pages/resume/stylesheet
+---
+
+main#main
+    include mixins/past
+    include mixins/skillbar
+    include mixins/hidden
+
+    section#about(class="tiles")
+        p I created this website to function as my resume. So, what can you expect from hiring me?
+        include content/about
+
+    section#eye
+        h2 An eye for...
+        .hidden
+            +hidden("accessibility", "Accessibility")
+                p.
+                    Contrast checking, semantic HTML, pausable animations. 
+                    Everything and everyone should strive to include as many people as possible. 
+                    No birth condition or life-changing accident should prohibit people from doing what they love, 
+                    let alone must.
+            +hidden("heart", "Performance and scalability")
+                p.
+                    Logos in SVG, images compressed, code documented and following DRY, 
+                    client-side code minimised, deployment automated. 
+                    Markdown over proprietary binary formats like .docx, 
+                    long-term reliable hosting like GitHub pages. 
+                    Everything can - and should - be built to be pleasant for everyone involved: producer or consumer.
+
+            +hidden("reader", "Readable HTML", true)
+                p.
+                    Frameworks are great: they're community-tested, well mantained and designed, and can be a huge timesaver. 
+                    But as #[a(href="https://picocss.com/#why") the example on the bottom of the PicoCSS website] examplifies, 
+                    there is an increasing problem of unmaintainable HTML that's written in function of a single framework. 
+                    Getting to create beautiful custom designs, and having the HTML and CSS grow together, is underappreciated.
+
+            +hidden("stack", "Being unique and creative!")
+                p.
+                    In an industry ruled by big budgets and safe decisions, I'd like to add to the weird stuff. 
+                    The times of useless gifs and easter eggs, hidden messages to cheer up someones day, 
+                    customisable profiles, app themes. Self expression deserves a place in tech.
+
+
+    section#projects
+        h2 Projects
+        p Check out my #[a(href="https://denperidge.com/projects") Projects] page for my own projects and some open source contributions!
+        p.
+            (Oh, and I didn't know where else to put this in the website, but I wanted to mention that I intended to prove my point in performance and inventiveness.
+            So to showcase this: no unnecessary JavaScript is used in this website. That is to say, no JavaScript is used at all!)
+    section#experience
+        h2 Work experience
+        +past(pastEmployments)
+
+
+    section#programming-languages
+        h2 Programming languages 
+        +skillbar(languages, 'programming')
+
+    section#skillsets 
+        h2 Skillsets
+        +skillbar(skillsets, 'tools')
+
+    section#workskills(class="tiles")
+        include:markdown-it content/workskills.md
+
+    section#learning
+        h2 Knowing new things?
+        .hidden
+            +hidden("bar-chart", "Learning", true)
+                p I'd love to get better at lots of things, so have some of them!
+                ul
+                    
+                    li Meaningful contributions to open-source projects
+                    li Improved accessibility (working with WebAIM, aria, screenreaders)
+                    li Front-end frameworks like React, Angular, Vue.js and Svelte
+                    li Improving my UX and design skills
+
+
+            +hidden("ruler-horizontal", "Education", true)
+                h4 Secondary school:
+                ul 
+                    li 2015-2016 - Graphical Media - KTA1 Hasselt
+                    li 2016-2018 - Informatics/Computer Sciences - KTA1 Hasselt
+
+
+        h4 College:
+        ul
+            li 2018-20 - Application Development (unfinished) - Thomas More
+            li 2020-22 - Communication & Multimedia (unfinished) - KDG Antwerp
+
+
+footer
+   include:markdown-it content/footer.md
+
