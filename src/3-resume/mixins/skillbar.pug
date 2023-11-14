@@ -6,7 +6,7 @@ mixin skillbar(skills, directory)
             - let value = info[1].trim()
             - let colour = info[2].trim();
             div
-                img(src=`/assets/${directory}/${label.toLowerCase()}.svg` alt=`Logo for ${label}`)
+                img(src=`/assets/resume/${directory}/${label.toLowerCase()}.svg` alt=`Logo for ${label}`)
                 if info.length <= 3
                     label= label 
                 else

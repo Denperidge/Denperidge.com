@@ -1,4 +1,4 @@
-@use 'vars';
+@import "../../variables";
 
 .tiles {
     ul {
@@ -11,11 +11,9 @@
         list-style: none;
 
         li {
-            width: 125px;
-            height: 125px;
+            width: 10rem;
+            height: 10rem;
             padding: 25px;
-            margin: 5px;
-
 
             border-radius: 10px;
 
@@ -30,23 +28,23 @@
 
         > :nth-child(1) {
             color: white;
-            background-color: vars.$first;
+            background-color: $d2;
         }
 
         > :nth-child(2) {
-            background-color: vars.$second;
+            background-color: $l1;
         }
 
         > :nth-child(3) {
-            background-color: vars.$third;
+            background-color: $l3;
         }
 
         > :nth-child(4) {
-            background-color: vars.$fourth;
+            background-color: $l4;
         }
 
         > :nth-child(5) {
-            background-color: vars.$fifth;
+            background-color: $l1;
         }
 
         

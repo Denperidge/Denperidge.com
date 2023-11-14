@@ -1,6 +1,6 @@
-@use 'vars';
+@import "../../variables";
 
-.hidden {
+.revealmore {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -29,8 +29,8 @@
 
         transition: width 1s, max-height 1s;  
 
-        background-color: vars.$fourth;
-        border: 1px solid vars.$third;
+        background-color: $l3;
+        border: 1px solid $d2;
         border-radius: 10px;
 
         overflow: hidden;

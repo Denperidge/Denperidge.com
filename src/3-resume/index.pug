@@ -9,22 +9,33 @@ stylesheet: pages/resume/stylesheet
 main#main
     include mixins/past
     include mixins/skillbar
-    include mixins/hidden
+    include mixins/revealmore
 
     section#about(class="tiles")
         p I created this website to function as my resume. So, what can you expect from hiring me?
-        include content/about
+        h1 Denperidge's resume
+
+        :markdown-it
+            Hi, I'm Cat! My programming handle is Denperidge.
+
+            ![Denperidge's GitHub profile picture](https://github.com/Denperidge.png?size=160")
+
+            - I'm a programmer with a background in multimedia.
+            - And am an all round a creative person, from Belgium!
+            - My pronouns are she/they.
+
+
 
     section#eye
         h2 An eye for...
-        .hidden
-            +hidden("accessibility", "Accessibility")
+        .revealmore
+            +revealmore("accessibility", "Accessibility")
                 p.
                     Contrast checking, semantic HTML, pausable animations. 
                     Everything and everyone should strive to include as many people as possible. 
                     No birth condition or life-changing accident should prohibit people from doing what they love, 
                     let alone must.
-            +hidden("heart", "Performance and scalability")
+            +revealmore("heart", "Performance and scalability")
                 p.
                     Logos in SVG, images compressed, code documented and following DRY, 
                     client-side code minimised, deployment automated. 
@@ -32,29 +43,29 @@ main#main
                     long-term reliable hosting like GitHub pages. 
                     Everything can - and should - be built to be pleasant for everyone involved: producer or consumer.
 
-            +hidden("reader", "Readable HTML", true)
+            +revealmore("reader", "Readable HTML", true)
                 p.
                     Frameworks are great: they're community-tested, well mantained and designed, and can be a huge timesaver. 
                     But as #[a(href="https://picocss.com/#why") the example on the bottom of the PicoCSS website] examplifies, 
                     there is an increasing problem of unmaintainable HTML that's written in function of a single framework. 
                     Getting to create beautiful custom designs, and having the HTML and CSS grow together, is underappreciated.
 
-            +hidden("stack", "Being unique and creative!")
+            +revealmore("stack", "Being unique and creative!")
                 p.
                     In an industry ruled by big budgets and safe decisions, I'd like to add to the weird stuff. 
-                    The times of useless gifs and easter eggs, hidden messages to cheer up someones day, 
+                    The times of useless gifs and easter eggs, revealmore messages to cheer up someones day, 
                     customisable profiles, app themes. Self expression deserves a place in tech.
-
 
     section#projects
         h2 Projects
-        p Check out my #[a(href="https://denperidge.com/projects") Projects] page for my own projects and some open source contributions!
+        p Check out my #[a(href="/projects") Projects] page for my own projects and some open source contributions!
         p.
             (Oh, and I didn't know where else to put this in the website, but I wanted to mention that I intended to prove my point in performance and inventiveness.
-            So to showcase this: no unnecessary JavaScript is used in this website. That is to say, no JavaScript is used at all!)
+            So to showcase this: no unnecessary JavaScript is used on this page. That is to say, no JavaScript is used at all!)
+    
     section#experience
         h2 Work experience
-        +past(pastEmployments)
+        +past
 
 
     section#programming-languages
@@ -66,12 +77,19 @@ main#main
         +skillbar(skillsets, 'tools')
 
     section#workskills(class="tiles")
-        include:markdown-it content/workskills.md
+        h2 Work skills
+        :markdown-it
+            - Good at teamwork and collaboration
+            - Fluent in English and Dutch
+            - Eager to learn and improve
+            - Detailed worker
+            - Focused on inclusivity
+
 
     section#learning
         h2 Knowing new things?
-        .hidden
-            +hidden("bar-chart", "Learning", true)
+        .revealmore
+            +revealmore("bar-chart", "Learning", true)
                 p I'd love to get better at lots of things, so have some of them!
                 ul
                     
@@ -81,7 +99,7 @@ main#main
                     li Improving my UX and design skills
 
 
-            +hidden("ruler-horizontal", "Education", true)
+            +revealmore("ruler-horizontal", "Education", true)
                 h4 Secondary school:
                 ul 
                     li 2015-2016 - Graphical Media - KTA1 Hasselt
@@ -95,5 +113,4 @@ main#main
 
 
 footer
-   include:markdown-it content/footer.md
 
