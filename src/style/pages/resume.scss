@@ -1,0 +1,26 @@
+@import "../../_includes/elements/revealmore";
+
+
+
+#about {
+    img {
+        height: 160px;  // Define to ensure no pop-in 
+    }
+    text-align: center;
+}
+
+@media print {
+    body {
+        padding: 0;
+    }
+    main {
+        box-shadow: none;
+        width: 100vw;
+    }
+}
+
+#learning {
+    ul { 
+        text-align: left;
+    }
+}

@@ -15,9 +15,21 @@
     left: -10000px;
     top: auto;
     overflow: hidden;
-    color: $l1;
     background-color: $d1;
     padding: 5px;
+
+    &:link {
+        color: $l1;
+    }
+    &:visited {
+        color: $l1;
+    }
+    &:hover {
+        color: $l2;
+    }
+    &:active {
+        color: $l2;
+    }
 
     &:focus {
         position: absolute;

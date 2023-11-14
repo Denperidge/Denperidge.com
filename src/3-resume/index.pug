@@ -3,13 +3,13 @@ layout: page.pug
 title: Resume
 permalink: "| resume/"
 order: 3
-stylesheet: pages/resume/stylesheet
+stylesheet: pages/resume/resume
 ---
 
 main#main
-    include mixins/past
-    include mixins/skillbar
-    include mixins/revealmore
+    include past_employment
+    include /elements/skillbar
+    include /elements/revealmore
 
     section#about(class="tiles")
         p I created this website to function as my resume. So, what can you expect from hiring me?
@@ -28,7 +28,7 @@ main#main
 
     section#eye
         h2 An eye for...
-        .revealmore
+        ul
             +revealmore("accessibility", "Accessibility")
                 p.
                     Contrast checking, semantic HTML, pausable animations. 
@@ -65,7 +65,7 @@ main#main
     
     section#experience
         h2 Work experience
-        +past
+        +past_employment
 
 
     section#programming-languages
