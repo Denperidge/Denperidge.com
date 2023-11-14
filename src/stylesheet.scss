@@ -5,8 +5,6 @@
 @import "style/OpenDyslexic";
 
 
-
-
 * {
     outline-offset: 2.5px;
     outline-color: $d1;
@@ -14,32 +12,27 @@
 
 html {
     height: 100%;
-
-    //background-image: url("/assets/evening-sky.png");
-    background-size: 100%;
-    color: $d1;
 }
 
 body {
     min-height: 100%;
     margin: 0;
-
     padding: 20px;
     
     background-color: $l4;
-
     background-image: url("/assets/svgs/background_tile.svg");
     background-size: cover;
     
-
-
-
-    //padding: 0;
-
     font-family: "OpenDyslexic", cursive, sans-serif;
-    //font-family: "Catamaran", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
+}
 
+body > * {
+    margin: auto;
+    width: 85%;
+    @media (max-width: 600px) {
+        width: 95%;
+    }
 }
 
 body > main, body > section, body > aside {

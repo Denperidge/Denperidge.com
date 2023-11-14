@@ -13,7 +13,7 @@ header {
     background-size: 100% 100%;
 
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     
 
     a {
@@ -39,8 +39,6 @@ header {
 
 
     nav {
-        width: 80%;
-    
         ul {
             padding: 0;
             margin: 0;
@@ -58,38 +56,4 @@ header {
             }
         }
     }
-
-    
-    #buttons {
-        position: absolute;
-        top: 5px;
-        right: 45px;
-        height: calc(100% - 10px);
-
-        width: 200px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        button {
-            height: 100%;
-
-            background: none;
-            border: none;
-
-            cursor: pointer;
-
-            &:hover {
-                filter: saturate(200%)
-            }
-
-            flex: 1;
-            img {
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
-
 }

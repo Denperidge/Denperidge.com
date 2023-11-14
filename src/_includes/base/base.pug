@@ -34,12 +34,6 @@ html(lang="en")
                     each page in collections.page
                         a(href=page.url)
                             li=page.data.title
-            
-            section#buttons
-                each icon in ["minimize", "maximize", "close"]
-                    button(class=icon)
-                        img(src=`/assets/svgs/${icon}.svg` alt=`${icon} button`)
-
         
         | !{content}
     

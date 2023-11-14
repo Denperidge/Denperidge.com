@@ -1,26 +1,4 @@
-@import "../../_includes/elements/revealmore";
+@import "../../_includes/elements/elements";
 
 
 
-#about {
-    img {
-        height: 160px;  // Define to ensure no pop-in 
-    }
-    text-align: center;
-}
-
-@media print {
-    body {
-        padding: 0;
-    }
-    main {
-        box-shadow: none;
-        width: 100vw;
-    }
-}
-
-#learning {
-    ul { 
-        text-align: left;
-    }
-}
