@@ -37,5 +37,13 @@ html(lang="en")
         
         | !{content}
     
+    
+        if tags
+            footer
+                ul#tags
+                    span Tags:
+                    each tag in tags
+                        li
+                            a(href="/tags/#" + tag)=tag
 
         script(src="/scripts/window.js")

@@ -159,3 +159,15 @@ details {
         }
     }
 }
+
+footer {
+    #tags {
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: flex-end;
+        li {
+            margin-left: 20px;
+        }
+    }
+}
+
