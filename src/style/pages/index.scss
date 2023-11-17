@@ -1,37 +1,39 @@
 @import "../variables";
 
-body {
+#container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    header {
-        flex-basis: 100%;
-        flex-shrink: 1;
-    }
+    justify-content: space-between;
     main {
-        flex-basis: 50%;
-        
+        margin-right: 20px;
     }
     aside {
-        flex-basis: 25%;
-        min-width: 300px;
+        max-width: 300px;
+        img {
+            max-width: 100%;
+        }
+        li {
+            word-break: break-all;
+        }
     }
+    
 }
 
-aside {
+
+#explanation {
     img {
-        width: 100%;
+        max-width: 250px;
     }
 }
 
 #denperidge {
     position: relative;
 
-    h1, .hover {
-        font-size: 5rem;
-        font-weight: bold;
-        text-decoration: none;
-        color: $d1;
+    h1 {
+        //font-size: 5rem;
+        @media (max-width: 500px) {
+            //font-size: 3rem;
+        }
     }
 
     section {
@@ -39,77 +41,5 @@ aside {
         background-color: $l4;
         border: 1px groove $d2;
     }
-
-    .D:hover, .D:hover + .en {
-        // Dendy
-        color: aqua;
-    }
-
-    .en:hover {
-        // Entrapta
-        color: purple;
-    }
-    .per:hover,
-    .per:hover + .i,
-    .per:hover ~ .d,
-    .i:hover,
-    .i:hover + .per,
-    .i:hover ~ .d
-     {
-        // Peridot
-        color: green;
-    }
-
-    .d:hover,
-    .d:hover ~ .i,
-    .d:hover ~ .ge,
-    .ge:hover,
-    .ge:hover ~ .d {
-        // Pidge
-        color: lime;
-    }
-
-
-    span {
-       
-        /*
-        &:nth-child(1):hover, &:nth-child(1):hover ~ :nth-child(2), &:nth-child(1):hover ~ :nth-child(3) {
-            color: red;
-        } */
-        /*&:nth-child(1), &:nth-child(2) {
-            :nth-child(1) {
-                color: red;
-            }
-        }*/
-    }
-
-    .hover {
-        position: absolute;
-        top: 0;
-        &.Den {
-            left: 0;
-            &:hover {
-                color: #eae34e;
-                z-index: 10;
-            }
-        }
-        &.en {
-            left: 3.4rem;
-        }
-
-        &.perid {
-            left: 8.5rem;
-        }
-
-        &.idge {
-            left: 15.3rem;
-        }
-    }
-
 }
 
-#explanation {
-    img {
-        max-width: 250px;
-    }
-}

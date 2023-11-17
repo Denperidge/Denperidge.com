@@ -7,35 +7,36 @@ stylesheet: pages/index
 
 ---
 
-main#main
-    p Hi! I'm
-    section#denperidge
-        h1
-            each letter in ["D", "en", "per", "i", "d", "ge"]
-                span(tabindex="0" id=letter)=letter
+div#container
+    main#main
+        p Hi! I'm
+        section#denperidge
+            h1
+                each letter in ["D", "en", "per", "i", "d", "ge"]
+                    span(tabindex="0" id=letter)=letter
 
-        article#explanation
-            h2 About my name
-            each character in characters 
-                section(id=character.name)
-                    h3=character.name
-                    img(src=`/assets/characters/${character.name}.png` alt=character.alt)
-                    p=character.description
+            article#explanation
+                h2 About my name
+                each character in characters 
+                    section(id=character.name)
+                        h3=character.name
+                        img(src=`/assets/characters/${character.name}.png` alt=character.alt)
+                        p=character.description
 
-    section
-        p.
-            (Psst. I coded this website a bit peculiarly.
-            You can read about it on #[a(href="/projects/denperidge.com") /projects/denperidge.com]
-            if that is something you might be interested in perhaps)
+        section
+            p.
+                (Psst. I coded this website a bit peculiarly.
+                You can read about it on #[a(href="/projects/denperidge.com") /projects/denperidge.com]
+                if that is something you might be interested in perhaps)
 
-aside
-    img.profile-pic(src="/assets/Dendy.jpg" alt="My GitHub profile picture: fanart of Dendy from OK K.O. They've got a yellow outfit with green straps, and big round scientist goggles around their eyes. Their brown hair is a bit poofy and reaches the bottom of their head. They're smiling!")
-    h2 Links
-    p You can find me on...
-    ul
-        each href, title in links
-            li #{title}:&nbsp;
-                a(href=href)=href
+    aside
+        img.profile-pic(src="/assets/Dendy.jpg" alt="My GitHub profile picture: fanart of Dendy from OK K.O. They've got a yellow outfit with green straps, and big round scientist goggles around their eyes. Their brown hair is a bit poofy and reaches the bottom of their head. They're smiling!")
+        h2 Links
+        p You can find me on...
+        ul
+            each href, title in links
+                li #{title}:&nbsp;
+                    a(href=href)=href
 
 
 script.
