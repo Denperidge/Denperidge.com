@@ -119,8 +119,7 @@ details {
 
     line-height: 1.6;
 
-    $detailsborder: 2px solid $l5;
-    border: $detailsborder;
+    border: $lightborder;
     border-radius: 4px;
 
     summary {
@@ -152,7 +151,7 @@ details {
 
     &[open] {
         summary {
-            border-bottom: $detailsborder;
+            border-bottom: $lightborder;
         }
     }
 }
