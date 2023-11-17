@@ -91,12 +91,18 @@ header {
 
 
     nav {
+        padding: 10px 10px 18px 10px;
+        
         ul {
             padding: 0;
             margin: 0;
     
             text-align: center;
             list-style: none;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
     
             > * {
                 min-width: 150px;
