@@ -33,8 +33,9 @@ body {
 body > * {
     margin: auto;
     width: 85%;
+    padding: 20px;
     @media (max-width: 600px) {
-        width: 95%;
+        width: calc(95% - 20px);
     }
 }
 
@@ -115,7 +116,9 @@ header {
 
 // Details
 details {
+    max-width: calc(100% - 25px);
     margin: 12.5px;
+    padding: 12.5px;
 
     line-height: 1.6;
 
@@ -123,9 +126,9 @@ details {
     border-radius: 4px;
 
     summary {
-        padding: 12.5px;
         cursor: pointer;
     }
+
 
     @media (orientation: portrait) {
         width: 100%;
@@ -151,6 +154,7 @@ details {
 
     &[open] {
         summary {
+            padding-bottom: 10px;  // Move border down
             border-bottom: $lightborder;
         }
     }

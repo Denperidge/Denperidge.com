@@ -1,6 +1,10 @@
 @import "../style/variables";
 
 .revealmore {
+    padding: 0px;
+}
+
+.revealmore li {
     position: relative;
     width: 35%;
     // Max-height solution implemented from 

@@ -5,3 +5,15 @@ img {
     margin: auto;
 }
 
+@media print {
+    header {
+        display: none;
+    }
+}
+
+section {
+    margin: 60px auto;
+    &:first-child {
+        margin-top: 0px;
+    }
+}
