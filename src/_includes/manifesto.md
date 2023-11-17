@@ -1,6 +1,7 @@
 ---
 layout: base/base.pug
 tags: manifesto
+permalink: "MANIFESTO/{{title | uppercase}}/"
 stylesheet: pages/manifesto
 ---
 <main id="main">
