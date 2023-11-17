@@ -14,7 +14,7 @@ tags:
 
 intro:
     A template with YAML, & SCSS, src+dist directory structure, default skip links, favicon generation, opengraphg support,
-    normalize.css an sr-only accessibility lcass
+    normalize.css an sr-only accessibility class. Denperidge.com is powered by this starter!
 
 hrefs:
     - name: cats-eleventy-starter
