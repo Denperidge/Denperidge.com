@@ -1,31 +1,30 @@
 mixin skillbar(skills, directory)
     .skillbars
-        for skill in skills
-            - let info = skill.split('-');
-            - let label = info[0].trim();
-            - let value = info[1].trim()
-            - let colour = info[2].trim();
+        each skill in skills
             div
-                img(src=`/assets/resume/${directory}/${label.toLowerCase()}.svg` alt=`Logo for ${label}`)
-                if info.length <= 3
-                    label= label 
+                - console.log(skill.name)
+                img(src=`/assets/resume/${directory}/${skill.name}.svg` alt=`Logo for ${skill.name}`)
+                if skill.label
+                    label= skill.label 
                 else
-                    label= info[3]
+                    label= skill.name
                 div 
                     svg.progress
-                        if colour.indexOf(',') != -1
+                        if skill.colour.indexOf(',') != -1
                             defs
-                                - let urlLabel = label.replace(/ /g, '');
+                                - let urlLabel = skill.name.replace(/ /g, "");
                                 linearGradient(id=urlLabel)
-                                    - let colourstops = colour.split(',')
+
+                                    - let colourstops = skill.colour.split(',')
                                     stop(stop-color=colourstops.shift() offset="0%")
                                     if colourstops.length >= 2
                                         stop(stop-color=colourstops.shift() offset="50%")
+                                        
                                     stop(stop-color=colourstops.pop() offset="100%")
                                     
 
                                     //-for colourstop, index in colourstops
                                         stop(stop-color=colourstop offset=`${index*(100/colourstops.length)}%`)
-                                    - colour = `url(#${urlLabel})`;
+                                    - skill.colour = `url(#${urlLabel})`;
 
-                        rect(width=`${value}%` height="100%" style=`fill: ${colour};`)
+                        rect(width=`${skill.value}%` height="100%" style=`fill: ${skill.colour};`)

@@ -1,12 +1,40 @@
 
-- "Image editing      - 95 - #31A8FF - Image editing: Adobe Photoshop"
-- "Video editing      - 85 - #389BD8,#FCFF7C,#FF3044 - Video editing: Adobe Premiere Pro, Davinci Resolve"
-- "Audio editing      - 75 - #9999FF - Audio editing: Adobe Audition, Ableton Live, Audacity"
+- name: Image editing
+  value: 95
+  colour: "#31A8FF"
+  label: "Image editing: Adobe Photoshop"
+  
+- name: Video editing
+  value: 85
+  colour: "#389BD8,#FCFF7C,#FF3044"
+  label: "Video editing: Adobe Premiere Pro, Davinci Resolve"
 
-- "System management   - 75 - #E9500E -System managment: Windows, Ubuntu, Raspbian"
-- "Project management  - 90 - #0255CF,#2583FE -    Project managment: Kanban tools (Trello, GH Projects), Notion"
+- name: Audio editing
+  value: 75
+  colour: "#9999FF"
+  label: "Audio editing: Adobe Audition, Ableton Live, Audacity"
 
-- "Physical audio     - 80 - #F9B82D -    Assembling & handling professional equipment"
+- name: System management
+  value: 75
+  colour: "#E9500E"
+  label: "System managment: Windows, Ubuntu, Raspbian"
+  
+- name: Project management
+  value: 90
+  colour: "#0255CF,#2583FE"
+  label: "Project managment: Kanban tools (Trello, GH Projects), Notion"
 
-- "UXUI Design        - 70 - #0ACF83,#1ABCFE - UX/UI Design: Adobe Illustrator & InDesign & XD, Figma"
-- "Physical video     - 55 - #DF6D36,#A7423B - Assembling & handling professional equipment"
+- name: Physical audio
+  value: 80
+  colour: "#F9B82D"
+  label: Assembling & handling professional equipment
+
+- name: UXUI Design
+  value: 70
+  colour: "#0ACF83,#1ABCFE"
+  label: "UX/UI Design: Adobe Illustrator & InDesign & XD, Figma"
+
+- name: Physical video
+  value: 55
+  colour: "#DF6D36,#A7423B"
+  label: Assembling & handling professional equipment"
