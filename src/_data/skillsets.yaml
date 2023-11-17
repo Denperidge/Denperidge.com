@@ -1,9 +1,14 @@
 
+- name: a11y
+  value: 60
+  colour: "#fb37ff"
+  label: Accessibility (a11y)
+
 - name: Image editing
   value: 95
   colour: "#31A8FF"
   label: "Image editing: Adobe Photoshop"
-  
+
 - name: Video editing
   value: 85
   colour: "#389BD8,#FCFF7C,#FF3044"
@@ -24,17 +29,43 @@
   colour: "#0255CF,#2583FE"
   label: "Project managment: Kanban tools (Trello, GH Projects), Notion"
 
+- name: Documentation
+  value: 80
+  colour: "#3c40f5"
+  label: Divio Documentation structuring
+
+- name: CI
+  value: 90
+  colour: "#4caf50"
+  label: "CI: Woodpecker, GitHub Actions..."
+
+- name: Ansible
+  value: 50
+  colour: "#d71e00"
+  label: "DevOps: Ansible"
+  link: https://github.com/Denperidge/ansible-templates
+
+- name: Buildtools
+  value: 70
+  colour: "#cf4647"
+  label: "Build tools: Gulp, Parcel..."
+
+- name: PyPi
+  value: 70
+  colour: "#3775a9,#ffd242"
+  label: PyPi Package development
+
+- name: UXUI Design
+  value: 75
+  colour: "#0ACF83,#1ABCFE"
+  label: "UX/UI Design: Excalidraw, Adobe Illustrator & InDesign & XD, Figma"
+
 - name: Physical audio
   value: 80
   colour: "#F9B82D"
-  label: Assembling & handling professional equipment
-
-- name: UXUI Design
-  value: 70
-  colour: "#0ACF83,#1ABCFE"
-  label: "UX/UI Design: Adobe Illustrator & InDesign & XD, Figma"
+  label: Assembling & handling professional audio equipment
 
 - name: Physical video
-  value: 55
+  value: 45
   colour: "#DF6D36,#A7423B"
-  label: Assembling & handling professional equipment"
+  label: Assembling & handling professional video equipment

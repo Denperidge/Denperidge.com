@@ -2,29 +2,30 @@ mixin skillbar(skills, directory)
     .skillbars
         each skill in skills
             div
-                - console.log(skill.name)
-                img(src=`/assets/resume/${directory}/${skill.name}.svg` alt=`Logo for ${skill.name}`)
-                if skill.label
-                    label= skill.label 
-                else
-                    label= skill.name
-                div 
-                    svg.progress
-                        if skill.colour.indexOf(',') != -1
-                            defs
-                                - let urlLabel = skill.name.replace(/ /g, "");
-                                linearGradient(id=urlLabel)
+                a(href=skill.link)
 
-                                    - let colourstops = skill.colour.split(',')
-                                    stop(stop-color=colourstops.shift() offset="0%")
-                                    if colourstops.length >= 2
-                                        stop(stop-color=colourstops.shift() offset="50%")
+                    img(src=`/assets/resume/${directory}/${skill.name.toLowerCase()}.svg` alt=`Logo for ${skill.name}`)
+                    if skill.label
+                        label= skill.label 
+                    else
+                        label= skill.name
+                    div 
+                        svg.progress
+                            if skill.colour.indexOf(',') != -1
+                                defs
+                                    - let urlLabel = skill.name.replace(/ /g, "");
+                                    linearGradient(id=urlLabel)
+
+                                        - let colourstops = skill.colour.split(',')
+                                        stop(stop-color=colourstops.shift() offset="0%")
+                                        if colourstops.length >= 2
+                                            stop(stop-color=colourstops.shift() offset="50%")
+                                            
+                                        stop(stop-color=colourstops.pop() offset="100%")
                                         
-                                    stop(stop-color=colourstops.pop() offset="100%")
-                                    
 
-                                    //-for colourstop, index in colourstops
-                                        stop(stop-color=colourstop offset=`${index*(100/colourstops.length)}%`)
-                                    - skill.colour = `url(#${urlLabel})`;
+                                        //-for colourstop, index in colourstops
+                                            stop(stop-color=colourstop offset=`${index*(100/colourstops.length)}%`)
+                                        - skill.colour = `url(#${urlLabel})`;
 
-                        rect(width=`${skill.value}%` height="100%" style=`fill: ${skill.colour};`)
+                            rect(width=`${skill.value}%` height="100%" style=`fill: ${skill.colour};`)

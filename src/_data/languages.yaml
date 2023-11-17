@@ -15,60 +15,75 @@
 - name: JavaScript
   value: 100
   colour: "#689F63"
-  label: (Node.)JS, jQuery
+  label: (Node.)JS, jQuery, TypeScript
 
 - name: Git
-  value: 85
+  value: 90
   colour: "#F05133"
   label: Git CLI, VSCode interface
 
 - name: GitHub
   value: 90
   colour: "#231F20"
-  label: GitHub Pages, Issues, Wiki, Actions...
+  label: "GitHub: Pages, Issues, Wiki, Actions..."
+
 - name: Electron
-  value: 70
+  value: 50
   colour: "#9FEAF9"
 
 - name: CSharp
-  value: 75
+  value: 65
   colour: "#05930C"
   label: C# (Console, Winforms, WPF)
 
 - name: Docker
-  value: 80
+  value: 85
   colour: "#2496ED"
-  label: "DevOps: Docker, Gulp, Parcel..."
+  label: "DevOps: Docker (Compose)"
 
 - name: Scripting
-  value: 85
+  value: 90
   colour: "#47B353"
   label: Bash, Batch
 
 - name: PHP
-  value: 70
+  value: 55
   colour: "#777BB3"
   label: PHP & Laravel
 
 - name: Cordova
-  value: 65
+  value: 30
   colour: "#BCBCBC"
 
 - name: Java
-  value: 70
+  value: 40
   colour: "#F8981D"
-  label: Java Web/Android"
+  label: "Java: development for Web/Android"
 
 - name: Databases
-  value: 70
+  value: 60
   colour: "#00758F"
   label: "Databases: MySQL/MongoDB"
 
 - name: CLI
   value: 80
   colour: "#3E474A"
-  label: Command Line (Bash, Batch, PowerShell)"
+  label: Command Line (Bash, Batch, PowerShell)
 
 - name: Django
   value: 65
   colour: "#000000"
+
+- name: Emberjs
+  value: 80
+  colour: "#e04e39"
+  label: "Ember.js: developing Single Page Applications"
+
+- name: Sparql
+  value: 30
+  colour: "#0c479c"
+
+- name: SSG
+  value: 70
+  colour:  red
+  label: "Static site generators: Eleventy, Jekyll..."
