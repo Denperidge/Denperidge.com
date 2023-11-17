@@ -1,20 +1,9 @@
 @import "variables";
 
 header {
-    color: $l1;
-
-    box-sizing: border-box;
-    outline: 1px groove $l1;
-    outline-offset: -5px;
-    position: relative;
-
     background-image: url("/assets/svgs/header.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
-    display: flex;
-    justify-content: space-around;
-    
 
     a {
         font-size: 1.4rem;
