@@ -3,6 +3,7 @@ layout: project.pug
 title: (Contrib) Pride Emojis
 description: A bunch of manually made pride emojis
 tags:
+    - queer
     - image editing
 
 intro:

@@ -7,7 +7,7 @@ tags:
     - eleventy
     - ci
     - github
-    - github actions
+    - ci
     - github pages
 
 intro:

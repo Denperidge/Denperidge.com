@@ -5,7 +5,8 @@ description: A fork of a fork of comicstrip, allowing in-code usage of the previ
 tags:
   - python
   - fork
-  - github actions
+  - ci
+  - ci
 
 intro:
     Comicstrip is a very neat program. It cuts up a comic page into different panes!

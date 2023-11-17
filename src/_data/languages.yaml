@@ -1,11 +1,13 @@
 - name: Python
   value: 95
   colour: "#366E9D"
+  tag: python
 
 - name: HTML
   value: 100
   colour: "#E44D26"
   label: Semantic & accessible HTML
+  tag: html
 
 - name: SCSS
   value: 90
@@ -84,13 +86,15 @@
   value: 80
   colour: "#e04e39"
   label: "Ember.js: developing Single Page Applications"
+  tag: emberjs
 
 - name: Sparql
   value: 30
   colour: "#0c479c"
+  tag: sparql
 
 - name: SSG
   value: 70
-  colour:  red
+  colour: "#222222"
   label: "Static site generators: Eleventy, Jekyll..."
   tag: eleventy

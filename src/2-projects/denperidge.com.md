@@ -10,8 +10,8 @@ tags:
   - scss
   - css
   - js
+  - ci
   - github
-  - github actions
   - github pages
 
 intro:

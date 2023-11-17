@@ -38,6 +38,7 @@
   value: 90
   colour: "#4caf50"
   label: "CI: Woodpecker, GitHub Actions..."
+  tag: ci
 
 - name: Ansible
   value: 50
@@ -54,6 +55,7 @@
   value: 70
   colour: "#3775a9,#ffd242"
   label: PyPi Package development
+  tag: pypi
 
 - name: UXUI Design
   value: 75

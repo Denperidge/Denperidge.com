@@ -6,8 +6,8 @@ tags:
   - html
   - js
   - ts
+  - ci
   - github
-  - github actions
   - github pages
 
 

@@ -6,7 +6,7 @@ tags:
   - neonpastel
   - python
   - github
-  - github actions
+  - ci
   - build tools
   - parcel
   - pug
