@@ -2,6 +2,17 @@
 layout: project.pug
 title: Denperidge.com
 description: This website!
+tags:
+  - eleventy
+  - javascript
+  - pug
+  - html
+  - scss
+  - css
+  - js
+  - github
+  - github actions
+  - github pages
 
 intro:
     Now, you may notice this website is not coded as one might expect.

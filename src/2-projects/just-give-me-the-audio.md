@@ -2,6 +2,11 @@
 layout: project.pug
 title: Just Give Me The Audio
 description: A fully script-based, minimal audio/video downloader
+tags:
+  - scripting
+  - batch
+  - powershell
+  - github
 
 intro:
     A minimal nonsense youtube downloader. Simply copy the youtube link to your clipboard and run mp3.bat, or wav.bat, or whatever file that your heart desires.

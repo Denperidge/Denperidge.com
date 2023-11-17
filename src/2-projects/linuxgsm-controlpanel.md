@@ -2,6 +2,9 @@
 layout: project.pug
 title: LinuxGSM-Controlpanel
 description: Proof of concept for a Linux Game Server Manager web GUI
+tags:
+  - python
+  - django
 
 intro: 
   A web interface to start and stop game servers managed through LinuxGSM,

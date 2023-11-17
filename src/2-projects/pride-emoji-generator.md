@@ -2,6 +2,9 @@
 layout: project.pug
 title: Pride Emoji Generator
 description: A script to create a bunch of pride emojis
+tags:
+  - queer
+  - python
 
 intro:
     The pronouns.page website has a curated selection of flags.

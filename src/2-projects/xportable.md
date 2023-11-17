@@ -2,7 +2,12 @@
 layout: project.pug
 title: xPortable
 description: Turn your phone a functional game controller, without installing an app on it.
-tags: archive
+tags:
+  - archive
+  - C#
+  - html
+  - css
+  - js
 
 intro:
     The Jackbox party pack games have the unique feature of anyone's phone being easily

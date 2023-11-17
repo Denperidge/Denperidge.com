@@ -11,11 +11,13 @@
   value: 90
   colour: "#CD6799"
   label: (S)CSS
+  tag: css
 
 - name: JavaScript
   value: 100
   colour: "#689F63"
   label: (Node.)JS, jQuery, TypeScript
+  tag: js
 
 - name: Git
   value: 90
@@ -25,7 +27,8 @@
 - name: GitHub
   value: 90
   colour: "#231F20"
-  label: "GitHub: Pages, Issues, Wiki, Actions..."
+  label: "GitHub: Pages, Issues, Wiki..."
+  tag: github
 
 - name: Electron
   value: 50
@@ -35,6 +38,7 @@
   value: 65
   colour: "#05930C"
   label: C# (Console, Winforms, WPF)
+  tag: C#
 
 - name: Docker
   value: 85
@@ -68,11 +72,13 @@
 - name: CLI
   value: 80
   colour: "#3E474A"
-  label: Command Line (Bash, Batch, PowerShell)
+  label: Scripting/command line (Bash, Batch, PowerShell)
+  tag: scripting
 
 - name: Django
   value: 65
   colour: "#000000"
+  tag: django
 
 - name: Emberjs
   value: 80
@@ -87,3 +93,4 @@
   value: 70
   colour:  red
   label: "Static site generators: Eleventy, Jekyll..."
+  tag: eleventy

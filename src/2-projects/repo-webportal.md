@@ -2,6 +2,9 @@
 layout: project.pug
 title: Repo Webportal
 description: A simple site generator for displaying all of a users/organisations repos!
+atgs:
+    - python
+    - css
 
 intro:
     Ever wanted to run a single Python script, to 

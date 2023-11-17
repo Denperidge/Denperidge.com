@@ -2,7 +2,13 @@
 layout: project.pug
 title: Neonpastel projects
 description: A small collection of self-indulgent webcore projects
-tags: neonpastel
+tags:
+    - neonpastel
+    - eleventy
+    - ci
+    - github
+    - github actions
+    - github pages
 
 intro:
     If you have read my manifesto pages, you may have become aware of my love for webcore;

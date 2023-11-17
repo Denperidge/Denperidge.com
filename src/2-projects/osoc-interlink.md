@@ -2,6 +2,14 @@
 layout: project.pug
 title: OSOC Interlink
 description: Transforming the public participant data from OSOC into an interlinked navigation
+tags:
+  - html
+  - js
+  - ts
+  - github
+  - github actions
+  - github pages
+
 
 intro:
     All the Open Summer Of Code data is open (as is fitting), 

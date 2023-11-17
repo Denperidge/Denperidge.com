@@ -4,8 +4,9 @@ title: Terraria Raspbian Server
 description: Setup a Terraria server on Raspbian/Linux with just one script, including autosave!
 
 tags:
-    - Bash
-    - Videos game
+    - scripting
+    - bash
+    - videos game
 
 intro: 
     You can run a Terraria server on your Raspberry Pi, but it requires some manual setups and changes. What if you didn't have to do any of that?

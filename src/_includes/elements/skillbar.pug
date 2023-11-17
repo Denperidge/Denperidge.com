@@ -2,8 +2,10 @@ mixin skillbar(skills, directory)
     .skillbars
         each skill in skills
             div
-                a(href=skill.link)
-
+                - let link;
+                if skill.tag
+                    - link = "/tags/#" + skill.tag;
+                a(href=link)
                     img(src=`/assets/resume/${directory}/${skill.name.toLowerCase()}.svg` alt=`Logo for ${skill.name}`)
                     if skill.label
                         label= skill.label 

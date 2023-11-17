@@ -2,7 +2,18 @@
 layout: project.pug
 title: The Nimona Archive
 description: An archive for the Nimona webcomic, with extra accessibility & style!
-tags: neonpastel
+tags:
+  - neonpastel
+  - python
+  - github
+  - github actions
+  - build tools
+  - parcel
+  - pug
+  - html
+  - scss
+  - css
+  - js
 
 intro:
   The Nimona webcomic has spawned a fully printed version, a movie, and helped start the career of its author!

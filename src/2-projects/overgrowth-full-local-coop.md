@@ -2,6 +2,9 @@
 layout: project.pug
 title: Overgrowth-Full-Local-Coop
 description: Implementing local coop to the video game Overgrowth
+tags:
+  - angelscript
+  - videos game
 
 intro:
     Overgrowth is a neat little video game. And it even has splitscreen multiplayer!

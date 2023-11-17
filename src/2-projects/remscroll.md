@@ -2,7 +2,12 @@
 layout: project.pug
 title: Remscroll
 description: An old browser extension to scroll down to a saved position
-tags: archive
+tags:
+    - archive
+    - html
+    - css
+    - js
+    - browser extension
 
 intro:
     A friend was going down a list, which required clicking a load more button.
