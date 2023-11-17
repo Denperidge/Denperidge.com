@@ -1,3 +1,15 @@
+- title: 2022-23 - Full-stack developer (team) - Redpencil.io
+  my_responsibilities:
+    - Develop applications using Ember.js, SPARQL, Docker, Python and the semantic.works stack
+    - Reworked the entire semantic.works documentation in terms of writing, collecting, parsing & displaying
+    - Worked on BurgerNabije-Besluitendatabank/lokaal-beslist for the Flemish government
+    - Microservice development
+    
+  lessons_learned:
+    - A work-in-progress learning of balancing my personal and professional life
+    - Co-piloting with other developers
+    - The value of working on location with your colleagues
+
 - title: 2021, 22 - Web developer (team) - Open Summer Of Code
   my_responsibilities:
     - Writing documentation, attending seminars, client meetings.
