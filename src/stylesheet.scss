@@ -169,6 +169,10 @@ footer {
         li {
             margin-left: 20px;
         }
+
+        @media print {
+            display: none;
+        }
     }
 }
 

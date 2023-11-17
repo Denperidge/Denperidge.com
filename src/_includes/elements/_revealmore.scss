@@ -2,50 +2,48 @@
 
 .revealmore {
     padding: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+        padding: 20px;
+        margin: 15px;
+
+        height: 100px;
+        min-width: 200px;
+        max-width: 400px;
+
+        @media print {
+            margin: 5px;
+            height: initial;
+            width: 30%;
+        }
+
+        cursor: pointer;
+
+        transition: width 1s, height 1s;
+
+        background-color: $l3;
+        border: $lightborder;
+        border-radius: 10px;
+
+        overflow: hidden;
+        text-align: center;
+        
+        img {
+            width: 50px;
+            height: auto;
+            margin: auto;
+        }
+        
+        h3 {
+            margin-top: 0;
+        }
+    }
+
+    .show {
+        height: initial;
+    }
 }
-
-.revealmore li {
-    position: relative;
-    width: 35%;
-    // Max-height solution implemented from 
-    max-height: 100px;
-    padding: 20px;
-    margin: 15px;
-    cursor: pointer;
-    @media (orientation: portrait) {
-        width: 80%;
-    }
-    display: block;
-    transition: width 1s, max-height 1s;  
-    background-color: $l3;
-    border: 1px solid $d2;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    img {
-        width: 50px;
-        height: auto;
-        margin: auto;
-    }
-    h3 {
-        margin-top: 0;
-    }
-    &:nth-of-type(1) {
-        top: 0;
-        left: 0;
-    }
-    &:nth-of-type(2) {
-        top: 0;
-        right: 0;
-    }
-    &:nth-of-type(3) {
-        bottom: 0;
-        left: 0;
-    }
-    &:nth-of-type(4) {
-        bottom: 0;
-        right: 0;
-    }        
-}
-
-

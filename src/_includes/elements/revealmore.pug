@@ -1,7 +1,10 @@
 // Based of https://stackoverflow.com/a/32721572
 mixin revealmore(logo, title, large=false)
-    li
+    li.show
         img(src=`/assets/resume/icons/${logo}.svg` alt=`Logo for ${logo}`)
         h3= title 
         if block 
             block
+
+mixin revealmorescript
+    script(src="/scripts/revealmore.js")
