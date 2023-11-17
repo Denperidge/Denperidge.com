@@ -112,3 +112,47 @@ header {
         }
     }
 }
+
+// Details
+details {
+    margin: 12.5px;
+
+    line-height: 1.6;
+
+    $detailsborder: 2px solid $l5;
+    border: $detailsborder;
+    border-radius: 4px;
+
+    summary {
+        padding: 12.5px;
+        cursor: pointer;
+    }
+
+    @media (orientation: portrait) {
+        width: 100%;
+        *:not(summary) {
+            margin: auto;
+            width: 90%;
+        }
+        margin-left: 0;
+        margin-right: 0;
+        ul {
+            padding-left: 0;
+        }
+    }
+    
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    :last-child {
+        margin-bottom: 25px;
+    }
+
+    &[open] {
+        summary {
+            border-bottom: $detailsborder;
+        }
+    }
+}
