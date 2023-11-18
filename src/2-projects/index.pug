@@ -23,7 +23,7 @@ main#main
     hr
 
     ul
-        - const otherProjects = collections.project.filter((project) => project.data.tags.indexOf("archive") < 0 && project.data.tags.indexOf("active") < 0 && project.data.tags.indexOf("neonpastel") < 0);
+        - const otherProjects = collections.project.filter((project) => project.data.tags.indexOf("archive") < 0 && project.data.tags.indexOf("active") < 0 && project.data.tags.indexOf("neonpastel") < 0 && project.data.tags.indexOf("external") < 0);
         each project in otherProjects
             - console.log(project.data.tags)
             if !project.data.tags.archive && !project.data.tags.active && !project.data.tags.neonpastel
@@ -35,6 +35,13 @@ main#main
 
     ul
         each project in collections.neonpastel 
+            +project(project)
+
+    hr
+
+    h2 External/professional
+    ul
+        each project in collections.external
             +project(project)
 
     hr

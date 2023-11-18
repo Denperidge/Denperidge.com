@@ -3,6 +3,7 @@ layout: project.pug
 title: Denperidge.com
 description: This website!
 tags:
+  - active
   - eleventy
   - javascript
   - pug
