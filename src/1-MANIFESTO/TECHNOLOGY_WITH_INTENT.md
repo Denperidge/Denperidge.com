@@ -1,7 +1,7 @@
 ---
 layout: manifesto.md
 title: Technology with intent
-tagline: If technology wasn't political the Meta company wouldn't exist
+tagline: If technology wasn't political Meta as a company wouldn't exist
 ---
 
 ## Politics
