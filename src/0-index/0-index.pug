@@ -19,6 +19,8 @@ div#container
                 h2 About my name
                 each character in characters 
                     section(id=character.name)
+                        button x
+
                         h3=character.name
                         img(src=`/assets/characters/${character.name}.png` alt=character.alt)
                         p=character.description

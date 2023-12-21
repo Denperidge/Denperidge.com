@@ -25,10 +25,20 @@
     img {
         max-width: 250px;
     }
+    button {
+        float: right;
+    }
 }
 
 #denperidge {
     position: relative;
+    h1 {
+        cursor: pointer;
+    }
+
+    span:hover {
+        text-decoration: underline;
+    }
 
     section {
         padding: 20px;

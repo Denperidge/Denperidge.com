@@ -1,7 +1,7 @@
 const spans = document.querySelectorAll("#denperidge h1 span");
 const explanations = document.querySelectorAll("#denperidge section");
 
-function onEverySpan(func) {
+function runOnEverySpan(func) {
     for (let i = 0; i < spans.length; i++) {
         func(spans[i]);
     }
@@ -14,10 +14,8 @@ function hideEveryExplanation() {
     }
 }
 
-function addLetterColours(e, character) {
-    console.log(e)
-
-    onEverySpan((span)=> {
+function onEventLetterColours(e, character) {
+    runOnEverySpan((span)=> {
         if (character.colourtext.indexOf(span.id) > -1) {
             span.style.color = character.colour;
         }
@@ -33,13 +31,12 @@ function addLetterColours(e, character) {
 
     let x, y;
 
-    if (e.type == "mousemove") {
-        x = e.layerX + 75;
-        y = e.layerY - 200;
+    if (e.type == "click") {
+        x = 10;
+        y = 10;
     } else {
         const pos = e.target.getBoundingClientRect();
-        console.log(pos)
-        x = pos.left + 75;
+        x = 20;
         y= pos.top - 450;
     }
     explanation.style.left = x + "px";
@@ -47,29 +44,35 @@ function addLetterColours(e, character) {
 };
 
 function removeLetterColours() {
-    onEverySpan((span) => {
+    runOnEverySpan((span) => {
         span.style.color = "initial";
     });
     hideEveryExplanation();
 }
 
+
+
 function setupEvents(selector, character) {
-    document.getElementById(selector).addEventListener("mousemove", (e) => { addLetterColours(e, character); });
+    //document.getElementById(selector).addEventListener("mousemove", (e) => { addLetterColours(e, character); });
     // Focusout first, then focus!
-    document.getElementById(selector).addEventListener("focusout", removeLetterColours);
+    //document.getElementById(selector).addEventListener("focusout", removeLetterColours);
+    //document.getElementById(selector).addEventListener("click", (e) => { addLetterColours(e, character); });
     
-    document.getElementById(selector).addEventListener("focus", (e) => { addLetterColours(e, character); });
-    document.addEventListener("mouseover", (e) => {
-        if (e.target.parentNode.tagName != "H1") {
-            removeLetterColours();
-        }
-    });
+    document.getElementById(selector).addEventListener("focus", (e) => { onEventLetterColours(e, character); });
+    
+    //setupEventsHide("mouseover");
+    //setupEventsHide("click");
 
 }
 
 // Hide the title (aside from screenreaders) and other explanations if js is enabled
 document.querySelector("#explanation h2").classList.add("sr-only");
 hideEveryExplanation();
+
+const hideButtons = document.querySelectorAll("#explanation button");
+for (let i = 0; i < hideButtons.length; i++) {
+    hideButtons[i].addEventListener("click", hideEveryExplanation);
+}
 
 setupEvents("D", characters[0]);
 setupEvents("en", characters[1]);
