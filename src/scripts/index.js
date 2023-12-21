@@ -36,7 +36,7 @@ function onEventLetterColours(e, character) {
         y = 10;
     } else {
         const pos = e.target.getBoundingClientRect();
-        x = 20;
+        x = 220;
         y= pos.top - 450;
     }
     explanation.style.left = x + "px";
@@ -59,6 +59,7 @@ function setupEvents(selector, character) {
     //document.getElementById(selector).addEventListener("click", (e) => { addLetterColours(e, character); });
     
     document.getElementById(selector).addEventListener("focus", (e) => { onEventLetterColours(e, character); });
+    document.getElementById(selector).addEventListener("blur", hideEveryExplanation);
     
     //setupEventsHide("mouseover");
     //setupEventsHide("click");
