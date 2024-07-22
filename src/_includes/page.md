@@ -1,6 +1,6 @@
 ---
 layout: base/base.pug
-tags: page
+tags: Page
 ---
 <main id="main">
     {{content}}
