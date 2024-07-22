@@ -8,8 +8,7 @@
     "Scripting",
     "Bash",
     "Batch",
-    "Powershell",
-    "Project"
+    "Powershell"
   ],
   "title": "Scriptbundler",
   "hrefs": [

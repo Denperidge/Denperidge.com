@@ -6,8 +6,7 @@
     "Python",
     "Fork",
     "CI",
-    "CI",
-    "Project"
+    "CI"
   ],
   "title": "(Fork) comicstrip",
   "hrefs": [

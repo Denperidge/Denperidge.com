@@ -23,7 +23,7 @@ main#main
     hr
 
     ul
-        - const otherProjects = collections.project.filter((project) => project.data.tags.indexOf("Archive") < 0 && project.data.tags.indexOf("Active") < 0 && project.data.tags.indexOf("Neonpastel") < 0 && project.data.tags.indexOf("External") < 0);
+        - const otherProjects = collections.Project.filter((project) => project.data.tags.indexOf("Archive") < 0 && project.data.tags.indexOf("Active") < 0 && project.data.tags.indexOf("Neonpastel") < 0 && project.data.tags.indexOf("External") < 0);
         each project in otherProjects
             - console.log(project.data.tags)
             if !project.data.tags.archive && !project.data.tags.active && !project.data.tags.neonpastel

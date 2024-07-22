@@ -13,8 +13,7 @@
     "JavaScript",
     "CI",
     "GitHub",
-    "GitHub Pages",
-    "Project"
+    "GitHub Pages"
   ],
   "title": "Denperidge.com",
   "hrefs": [

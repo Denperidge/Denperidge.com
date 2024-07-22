@@ -4,8 +4,7 @@
   "sort": null,
   "tags": [
     "Archive",
-    "Python",
-    "Project"
+    "Python"
   ],
   "title": "YouTube Clipgen",
   "hrefs": [

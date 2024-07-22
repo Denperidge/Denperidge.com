@@ -8,8 +8,7 @@
     "CI",
     "GitHub",
     "CI",
-    "GitHub Pages",
-    "Project"
+    "GitHub Pages"
   ],
   "title": "Neonpastel projects",
   "hrefs": [

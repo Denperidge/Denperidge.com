@@ -8,8 +8,7 @@
     "Ts",
     "CI",
     "GitHub",
-    "GitHub Pages",
-    "Project"
+    "GitHub Pages"
   ],
   "title": "OSOC Interlink",
   "hrefs": [

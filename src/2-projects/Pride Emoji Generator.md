@@ -4,8 +4,7 @@
   "sort": null,
   "tags": [
     "Queer",
-    "Python",
-    "Project"
+    "Python"
   ],
   "title": "Pride Emoji Generator",
   "hrefs": [

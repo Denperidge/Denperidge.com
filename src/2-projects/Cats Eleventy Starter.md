@@ -9,8 +9,7 @@
     "SCSS",
     "CSS",
     "JavaScript",
-    "Eleventy",
-    "Project"
+    "Eleventy"
   ],
   "title": "Cats Eleventy Starter",
   "hrefs": [

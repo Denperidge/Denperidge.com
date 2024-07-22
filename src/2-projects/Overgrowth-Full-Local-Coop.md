@@ -4,8 +4,7 @@
   "sort": null,
   "tags": [
     "Angelscript",
-    "Videos Game",
-    "Project"
+    "Videos Game"
   ],
   "title": "Overgrowth-Full-Local-Coop",
   "hrefs": [

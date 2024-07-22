@@ -6,8 +6,7 @@
     "Scripting",
     "Batch",
     "Powershell",
-    "GitHub",
-    "Project"
+    "GitHub"
   ],
   "title": "Just Give Me The Audio",
   "hrefs": [

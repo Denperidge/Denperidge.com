@@ -4,8 +4,7 @@
   "sort": null,
   "tags": [
     "External",
-    "Documentation",
-    "Project"
+    "Documentation"
   ],
   "title": "Semantic.works documentation rework",
   "hrefs": [

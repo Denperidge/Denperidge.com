@@ -4,8 +4,7 @@
   "sort": null,
   "tags": [
     "Python",
-    "Django",
-    "Project"
+    "Django"
   ],
   "title": "LinuxGSM-Controlpanel",
   "hrefs": [

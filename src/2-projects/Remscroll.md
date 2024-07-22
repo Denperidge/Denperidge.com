@@ -7,8 +7,7 @@
     "HTML",
     "CSS",
     "JavaScript",
-    "Browser Extension",
-    "Project"
+    "Browser Extension"
   ],
   "title": "Remscroll",
   "hrefs": [

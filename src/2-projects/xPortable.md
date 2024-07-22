@@ -7,8 +7,7 @@
     "C#",
     "HTML",
     "CSS",
-    "JavaScript",
-    "Project"
+    "JavaScript"
   ],
   "title": "xPortable",
   "hrefs": [

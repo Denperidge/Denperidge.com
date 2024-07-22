@@ -13,8 +13,7 @@
     "HTML",
     "SCSS",
     "CSS",
-    "JavaScript",
-    "Project"
+    "JavaScript"
   ],
   "title": "The Nimona Archive",
   "hrefs": [
