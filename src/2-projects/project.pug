@@ -1,7 +1,11 @@
 ---
 layout: base/base.pug
-tags: project
-permalink: "projects/{{title}}/"
+pagination:
+    data: projects
+    size: 1
+    alias: project
+    addAllPagesToCollections: true
+permalink: "| projects/!{project.title}/"
 ---
 
 mixin things(property, title)

@@ -109,6 +109,18 @@
   resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-0.2.0.tgz#026fbc21aa4f7ee3b360576f4c304b4d38128a24"
   integrity sha512-PoAMQMEbL8fBEO80eusB+XQg+1i2kxQHw6COwBRC4bVWxWuRroZjm3K6bOdqPHNHKikDIV7wLi9hSG4NoD1FEQ==
 
+"@directus/sdk@^16.1.1":
+  version "16.1.1"
+  resolved "https://registry.yarnpkg.com/@directus/sdk/-/sdk-16.1.1.tgz#a701fe54a51ccb7e0badb8132a6d05acdbca544c"
+  integrity sha512-vF/vk4PvyndxBE9SwININy3bfqjVPfQ35AXbsvDaJpE5OVclmQGbLqkYP6233GHqVUnveJDDUJssuz/QjeSYyQ==
+  dependencies:
+    "@directus/system-data" "1.1.0"
+
+"@directus/system-data@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@directus/system-data/-/system-data-1.1.0.tgz#0c9583a5220b3c0f3ecc7aba51eddee9875b805b"
+  integrity sha512-ETOoTyUXHQJD1NemdlJSADm32GoljQGhZUbg8bB31GAmBnGghTx+E16zzcb1TxRHEqQhV7PfLOrtwEksSTIw8Q==
+
 "@iarna/toml@^2.2.5":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
@@ -415,6 +427,11 @@ commander@^10.0.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-10.0.1.tgz#881ee46b4f77d1c1dccc5823433aa39b022cbe06"
   integrity sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==
 
+commander@^12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-12.1.0.tgz#01423b36f501259fdaac4d0e4d60c96c991585d3"
+  integrity sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==
+
 commander@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
@@ -491,6 +508,14 @@ dev-ip@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/dev-ip/-/dev-ip-1.0.1.tgz#a76a3ed1855be7a012bb8ac16cb80f3c00dc28f0"
   integrity sha512-LmVkry/oDShEgSZPNgqCIp2/TlqtExeGmymru3uCELnfyjY11IzpAproLYs+1X88fXO6DBoYP3ul2Xo2yz2j6A==
+
+directus-to-data@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/directus-to-data/-/directus-to-data-0.2.0.tgz#16c6dfaf33d0f1d96563ea006623d2a2069d42fb"
+  integrity sha512-jSoABBVRAMD+5MPxRgH16PCj3KMNBJkC9PqkGNnwbw7qv4IPvDPdZIJvl3QFw0ezIjF1XNZqNtDlURV2huKdTg==
+  dependencies:
+    "@directus/sdk" "^16.1.1"
+    commander "^12.1.0"
 
 doctypes@^1.1.0:
   version "1.1.0"
