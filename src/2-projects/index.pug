@@ -4,7 +4,7 @@ title: Projects
 permalink: "| projects/"
 order: 2
 eleventyImport:
-    collections: ["project", "active", "archive", "neonpastel"]
+    collections: ["Project", "Active", "Archive", "Neonpastel", "External"]
 ---
 
 mixin project(project)
@@ -17,14 +17,14 @@ main#main
     h1 My projects!
 
     ul
-        //each project in collections.active
+        each project in collections.Active
             +project(project)
 
     hr
 
     ul
-        - const otherProjects = collections.project.filter((project) => project.data.tags.indexOf("archive") < 0 && project.data.tags.indexOf("active") < 0 && project.data.tags.indexOf("neonpastel") < 0 && project.data.tags.indexOf("external") < 0);
-        //each project in otherProjects
+        - const otherProjects = collections.project.filter((project) => project.data.tags.indexOf("Archive") < 0 && project.data.tags.indexOf("Active") < 0 && project.data.tags.indexOf("Neonpastel") < 0 && project.data.tags.indexOf("External") < 0);
+        each project in otherProjects
             - console.log(project.data.tags)
             if !project.data.tags.archive && !project.data.tags.active && !project.data.tags.neonpastel
                 +project(project)
@@ -34,19 +34,19 @@ main#main
     h2 Neonpastel
 
     ul
-        //each project in collections.neonpastel 
+        each project in collections.Neonpastel 
             +project(project)
 
     hr
 
     h2 External/professional
     ul
-        //each project in collections.external
+        each project in collections.External
             +project(project)
 
     hr
 
     h2 Archived
     ul
-        //each project in collections.archive
+        each project in collections.Archive
             +project(project)

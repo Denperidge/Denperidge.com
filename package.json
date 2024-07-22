@@ -6,12 +6,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "yarn eleventy --serve",
+    "data": "node .data.mjs",
     "build": "yarn eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@catppuccin/palette": "^0.2.0",
-    "directus-to-data": "^0.2.0",
+    "directus-to-data": "^0.3.0",
     "eleventy-sass": "^2.2.3",
     "favicons": "^7.1.4",
     "js-yaml": "^4.1.0",

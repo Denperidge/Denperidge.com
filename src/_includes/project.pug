@@ -1,11 +1,7 @@
 ---
 layout: base/base.pug
-pagination:
-    data: projects
-    size: 1
-    alias: project
-    addAllPagesToCollections: true
-permalink: "| projects/!{project.title}/"
+tags: project
+permalink: "projects/{{title}}/"
 ---
 
 mixin things(property, title)
@@ -21,9 +17,9 @@ main
     h2.sr-only Intro
     p=intro
     
-    +things(good_things, "Accomplishments")
+    +things(achievements, "Achievements")
 
-    +things(bad_things, "Future improvements")
+    +things(future_improvements, "Future improvements")
 
 
     if hrefs
@@ -41,5 +37,3 @@ main
                 li 
                     a(href=link.url)=text
     
-
-    //!{content}
