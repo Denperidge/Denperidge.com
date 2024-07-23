@@ -4,23 +4,17 @@ tags: Project
 permalink: "projects/{{title}}/"
 ---
 
-mixin things(property, title)
-    if property
-        h2=title
-        ul
-            each prop in property 
-                li=prop 
-
 main
     h1=title
     
     h2.sr-only Intro
     p=intro
     
-    +things(achievements, "Achievements")
-
-    +things(future_improvements, "Future improvements")
-
+    h2 Achievements
+    section.markdown-render=achievements
+    
+    h2 Future improvements
+    section.markdown-render=future_improvements
 
     if hrefs
         h2 Links:
