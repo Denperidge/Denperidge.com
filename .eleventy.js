@@ -22,35 +22,6 @@ module.exports = function (eleventyConfig) {
         }
     });
 
-    eleventyConfig.addTransform("markdown", function(content) {
-        if (!this.page.outputPath.endsWith(".html") || !content) { return content; }
-
-        const headersInHtml = content.match(/(?<=<h)\d(?=>)/g);
-        const matches = content.find(/(?<=<section class="markdown-render">)(.|\n)*?(?=<\/section>)/g);
-
-        if (matches === null) {
-            return content;
-        } else {
-            for (let i=0; i < matches.length; i++) {
-                const match = matches[i]
-                console.log(match)
-                const originalMdString = match[0];
-                let newMdString;
-                // TODO: patchwork solution, doesn't work for other headers
-                if (headersInHtml) { 
-                    const highestHeaderInHtml = Math.max(...headersInHtml)
-                    newMdString = originalMdString.replaceAll("#", "#".repeat(highestHeaderInHtml + 1))
-                } else {
-                    newMdString = originalMdString;
-                }
-                console.log(newMdString)
-                return content.replace(originalMdString, md.render(newMdString));
-            }
-
-            
-        }
-    });
-
     return {
         dir: {
             input: "src",

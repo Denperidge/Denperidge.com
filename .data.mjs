@@ -12,10 +12,24 @@ directusToData({
     outputFilename: "src/_data/projects.json",
     callback: (projects) => {
         projects.forEach((project) => {
-            project.layout = "project.pug";
             const file = `src/2-projects/${project.title}.md`;
+            project.layout = "project.pug";
+            
             const data = JSON.stringify(project, null, 2);
-            fs.writeFile(file, `---json\n${data}\n---`, { encoding:"utf-8" }, () => {
+            const markdown = 
+                `---json
+                ${data}
+                ---
+                # ${project.title}
+                ${project.intro}
+
+                ## Achievements
+                ${project.achievements}
+
+                ## Future improvements
+                ${project.future_improvements}
+                `.replaceAll(/^ */gm, "")
+            fs.writeFile(file, markdown, { encoding:"utf-8" }, () => {
                 //console.log(`Written ${file}`)
             })
         });

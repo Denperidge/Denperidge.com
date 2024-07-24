@@ -1,20 +1,11 @@
 ---
 layout: base/base.pug
 tags: Project
-permalink: "projects/{{title}}/"
+permalink: "projects/{{title | slugify}}/"
 ---
 
 main
-    h1=title
-    
-    h2.sr-only Intro
-    p=intro
-    
-    h2 Achievements
-    section.markdown-render=achievements
-    
-    h2 Future improvements
-    section.markdown-render=future_improvements
+    | !{content}
 
     if hrefs
         h2 Links:
