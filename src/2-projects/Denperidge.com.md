@@ -22,7 +22,7 @@
 "url": "https://github.com/Denperidge/denperidge.github.io"
 }
 ],
-"description": "This website!",
+"description": "This website! It's still under construction, though.",
 "intro": "Now, you may notice this website is not coded as one might expect. You may notice a lack of it being an SPA.",
 "achievements": null,
 "future_improvements": null,
