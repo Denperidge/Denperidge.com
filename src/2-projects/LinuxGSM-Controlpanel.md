@@ -17,7 +17,7 @@
 "intro": "A web interface to start and stop game servers managed through LinuxGSM, made with Django!",
 "achievements": "- Nice little install script handles most things\n- It works!\n- The manual management for adding new servers allows more fine-tuned control than automatic detection\n",
 "future_improvements": "- Only handles starting & stopping\n- The manual management for adding new servers requires more setup time\n",
-"path": null,
+"path": "linuxgsm-controlpanel",
 "layout": "project.pug"
 }
 ---
