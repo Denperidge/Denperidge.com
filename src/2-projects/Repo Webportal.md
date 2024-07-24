@@ -2,7 +2,11 @@
 {
 "id": 84,
 "sort": null,
-"tags": null,
+"tags": [
+"Python",
+"CSS",
+"HTML"
+],
 "title": "Repo Webportal",
 "hrefs": [
 {
