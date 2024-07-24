@@ -8,7 +8,7 @@
 "CI",
 "CI"
 ],
-"title": "(Fork) comicstrip",
+"title": "Comicstrip",
 "hrefs": [
 {
 "name": "Denperidge fork",
@@ -30,7 +30,7 @@
 "layout": "project.pug"
 }
 ---
-# (Fork) comicstrip
+# Comicstrip
 Comicstrip is a very neat program. It cuts up a comic page into different panes! However, the original only allows for Python2 usage. And while the fork fixes that, it still lacks the ability to be used as anything but a command line tool. What if someone created exports that allowed for using comicstrip in a different program?
 
 ## Achievements
