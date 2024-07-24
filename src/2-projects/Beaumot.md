@@ -9,8 +9,7 @@
 "JavaScript",
 "jQuery",
 "GitHub",
-"GitHub Pages",
-"Extensions mods and plug-ins"
+"GitHub Pages"
 ],
 "title": "Beaumot",
 "hrefs": [
