@@ -9,7 +9,8 @@
 "SCSS",
 "CSS",
 "JavaScript",
-"Eleventy"
+"Eleventy",
+"GitHub"
 ],
 "title": "Cats Eleventy Starter",
 "hrefs": [
