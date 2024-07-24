@@ -5,8 +5,8 @@
 "tags": [
 "Scripting",
 "Batch",
-"Powershell",
-"GitHub"
+"GitHub",
+"PowerShell"
 ],
 "title": "Just Give Me The Audio",
 "hrefs": [
