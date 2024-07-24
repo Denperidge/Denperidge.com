@@ -31,7 +31,7 @@
 "intro": "The Nimona webcomic has spawned a fully printed version, a movie, and helped start the career of its author! This project aims to provide an archive for the orignal release and create a more accessible form of reading the comic.",
 "achievements": "- Using Comicstrip\n- Although a work in progress, alt text is being added for every panel\n- Patches have been created to (for example) remove the authors deadname\n- It's a nice archive for the original release, which includes little authors notes\n",
 "future_improvements": "- The styling of the website still requires some work\n",
-"path": null,
+"path": "nimona-archive",
 "layout": "project.pug"
 }
 ---
