@@ -37,7 +37,7 @@ jobs:
           message: 'CMS update (${{ github.event.repository.updated_at}})'
 
   deploy:
-    uses: ./.github/workflows/deploy.yml
+    uses: ./.github/workflows/gh-pages.yml
     needs: update-data
     permissions:
       contents: read
