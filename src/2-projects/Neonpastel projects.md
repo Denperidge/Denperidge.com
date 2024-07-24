@@ -24,6 +24,7 @@
 "intro": "If you have read my manifesto pages, you may have become aware of my love for webcore; creating things for the joy of creation and self expression. These are hosted & lniked under the neonpastel.net website and moniker!",
 "achievements": null,
 "future_improvements": null,
+"path": null,
 "layout": "project.pug"
 }
 ---

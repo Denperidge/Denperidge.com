@@ -18,6 +18,7 @@
 "intro": "Pride emojis, with some modified/added by yours truly!",
 "achievements": null,
 "future_improvements": null,
+"path": null,
 "layout": "project.pug"
 }
 ---
