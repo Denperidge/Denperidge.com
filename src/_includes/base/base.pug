@@ -5,18 +5,19 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
         -
+            const addition = " - Denperidge.com";
             let titleString;
             if (typeof titleOverride !== "undefined") {
-                titleString = titleOverride
+                titleString = titleOverride;
             } else {
-                titleString = title ? `${title} - Denperidge.com` : "Denperidge.com";
+                titleString = title ? `${title}${addition}` : "Denperidge.com";
             }
         title=titleString
 
         include favicons.pug
 
-        meta(property="og:title" content=titleString)
-        meta(property="og:url" content="https://denperidge.com/")
+        meta(property="og:title" content=`${titleString.replace(addition, "")}`)
+        meta(property="og:url" content="https://denperidge.com" + page.url)
         if description
             meta(property="og:description" content=description)
         else
@@ -33,7 +34,6 @@ html(lang="en")
 
 
     body
-        //div#window
         header 
             a(href="#main").skip-link Skip to main content
             nav
