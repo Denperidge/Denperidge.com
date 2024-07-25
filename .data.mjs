@@ -2,9 +2,9 @@ import fs from "fs";
 import directusToData from "directus-to-data";
 
 
-fs.readdirSync("src/2-projects/").forEach((file) => {
+fs.readdirSync("src/projects/").forEach((file) => {
     if (file.endsWith(".md")) {
-        fs.rmSync("src/2-projects/" + file)
+        fs.rmSync("src/projects/" + file)
     }
 });
 directusToData({
@@ -12,7 +12,7 @@ directusToData({
     outputFilename: "src/_data/projects.json",
     callback: (projects) => {
         projects.forEach((project) => {
-            const file = `src/2-projects/${project.title}.md`;
+            const file = `src/projects/${project.title}.md`;
             project.layout = "project.pug";
             
             const data = JSON.stringify(project, null, 2);

@@ -4,7 +4,7 @@
 "sort": null,
 "tags": [
 "Angelscript",
-"Videos Game"
+"Extensions mods and plug-ins"
 ],
 "title": "Overgrowth-Full-Local-Coop",
 "hrefs": [
@@ -17,6 +17,7 @@
 "intro": "Overgrowth is a neat little video game. And it even has splitscreen multiplayer! The problem is that it requires you to open the internal dev tools. But with this mod, all you have to do is press F9 to add a player, or F10 to remove one!",
 "achievements": "- It implements existing functionality in a more user-friendly way\n- My first (and currently only) game modding & AngelScript program\n",
 "future_improvements": "- It's a bit buggy\n",
+"path": "overgrowth-full-local-coop",
 "layout": "project.pug"
 }
 ---

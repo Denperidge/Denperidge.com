@@ -9,7 +9,9 @@
 "SCSS",
 "CSS",
 "JavaScript",
-"Eleventy"
+"Eleventy",
+"GitHub",
+"Static Site Generators"
 ],
 "title": "Cats Eleventy Starter",
 "hrefs": [
@@ -22,6 +24,7 @@
 "intro": "A template with YAML, & SCSS, src+dist directory structure, default skip links, favicon generation, opengraphg support, normalize.css an sr-only accessibility class. Denperidge.com is powered by this starter!",
 "achievements": "- A template to handle my personal Eleventy boilerplate code\n- Minimal commits allow pulling new updates as non-breakingly as possible\n",
 "future_improvements": "- Limited documentation\n",
+"path": "cats-eleventy-starter",
 "layout": "project.pug"
 }
 ---

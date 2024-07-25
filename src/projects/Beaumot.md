@@ -25,6 +25,7 @@
 "intro": "The very common situation where a speech therapist needs a website where they can display specific words on the screen for a set amount of time! No problem. And keep in mind, the computer might be old. Like super old.",
 "achievements": "- Compatible with IE8 to ensure maximum device compatibility\n- The design is neutral but nice!\n",
 "future_improvements": "- Only in Dutch\n",
+"path": "beaumot",
 "layout": "project.pug"
 }
 ---

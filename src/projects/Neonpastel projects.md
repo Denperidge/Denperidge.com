@@ -21,14 +21,15 @@
 }
 ],
 "description": "A small collection of self-indulgent webcore projects",
-"intro": "If you have read my manifesto pages, you may have become aware of my love for webcore; creating things for the joy of creation and self expression. These are hosted & lniked under the neonpastel.net website and moniker!",
+"intro": "If you have read my (future) blog posts, you may have become aware of my love for webcore; creating things for the joy of creation and self expression. These are hosted & lniked under the neonpastel.net website and moniker!",
 "achievements": null,
 "future_improvements": null,
+"path": "neonpastel",
 "layout": "project.pug"
 }
 ---
 # Neonpastel projects
-If you have read my manifesto pages, you may have become aware of my love for webcore; creating things for the joy of creation and self expression. These are hosted & lniked under the neonpastel.net website and moniker!
+If you have read my (future) blog posts, you may have become aware of my love for webcore; creating things for the joy of creation and self expression. These are hosted & lniked under the neonpastel.net website and moniker!
 
 ## Achievements
 null

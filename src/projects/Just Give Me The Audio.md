@@ -5,8 +5,8 @@
 "tags": [
 "Scripting",
 "Batch",
-"Powershell",
-"GitHub"
+"GitHub",
+"PowerShell"
 ],
 "title": "Just Give Me The Audio",
 "hrefs": [
@@ -19,6 +19,7 @@
 "intro": "A minimal nonsense youtube downloader. Simply copy the youtube link to your clipboard and run mp3.bat, or wav.bat, or whatever file that your heart desires. No dependencies or extra setup necessary; a one-click install automatically downloads the latest yt-dlp & ffmpeg version, and you're good to go.",
 "achievements": "- One-click install which automatically grabs the latest version of the binaries\n- Its fully script based, no binary files within the code\n- You can rename mp3.bat to wav.bat, and it will then download a wav instead. Come on. That's pretty neat\n- Its faster than a GUI as well as the CLI!\n",
 "future_improvements": "- It only supports Windows\n- The script windows pop up and remove fast, which may look a bit weird\n",
+"path": "just-give-me-the-audio",
 "layout": "project.pug"
 }
 ---

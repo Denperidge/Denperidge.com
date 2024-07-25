@@ -2,7 +2,11 @@
 {
 "id": 84,
 "sort": null,
-"tags": null,
+"tags": [
+"Python",
+"CSS",
+"HTML"
+],
 "title": "Repo Webportal",
 "hrefs": [
 {
@@ -18,6 +22,7 @@
 "intro": "Ever wanted to run a single Python script, to",
 "achievements": "- Simple UX\n- Minimal design\n- No external dependencies\n- Also includes contributors and profile images\n",
 "future_improvements": "- The output is not easily customisable\n- It still requires manual reruns\n",
+"path": "repo-webportal",
 "layout": "project.pug"
 }
 ---
