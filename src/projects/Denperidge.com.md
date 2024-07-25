@@ -27,10 +27,11 @@
 "achievements": null,
 "future_improvements": null,
 "path": "denperidge-dot-com",
-"layout": "project.pug"
+"layout": "project.pug",
+"titleOverride": "Denperidge.com - Project - Denperidge.com"
 }
 ---
-# Denperidge.com
+# [Projects/](..) Denperidge.com
 Now, you may notice this website is not coded as one might expect. You may notice a lack of it being an SPA.
 
 ## Achievements

@@ -25,10 +25,11 @@
 "achievements": null,
 "future_improvements": null,
 "path": "neonpastel",
-"layout": "project.pug"
+"layout": "project.pug",
+"titleOverride": "Neonpastel projects - Project - Denperidge.com"
 }
 ---
-# Neonpastel projects
+# [Projects/](..) Neonpastel projects
 If you have read my (future) blog posts, you may have become aware of my love for webcore; creating things for the joy of creation and self expression. These are hosted & lniked under the neonpastel.net website and moniker!
 
 ## Achievements

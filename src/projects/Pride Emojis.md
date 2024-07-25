@@ -20,10 +20,11 @@
 "achievements": null,
 "future_improvements": null,
 "path": "pride-emojis",
-"layout": "project.pug"
+"layout": "project.pug",
+"titleOverride": "Pride Emojis - Project - Denperidge.com"
 }
 ---
-# Pride Emojis
+# [Projects/](..) Pride Emojis
 Pride emojis, with some modified/added by yours truly!
 
 ## Achievements

@@ -32,10 +32,11 @@
 "achievements": "- Using Comicstrip\n- Although a work in progress, alt text is being added for every panel\n- Patches have been created to (for example) make filenames more consistent, remove the authors deadname\n- It's a nice archive for the original release, which includes little authors notes",
 "future_improvements": "- The styling of the website still requires some work\n",
 "path": "nimona-archive",
-"layout": "project.pug"
+"layout": "project.pug",
+"titleOverride": "The Nimona Archive - Project - Denperidge.com"
 }
 ---
-# The Nimona Archive
+# [Projects/](..) The Nimona Archive
 The Nimona webcomic has spawned a fully printed version, a movie, and helped start the career of its author! This project aims to provide an archive for the orignal webcomic release, alongside creating a more accessible form of reading the comic.
 
 ## Achievements

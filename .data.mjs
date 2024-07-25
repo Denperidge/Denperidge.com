@@ -14,13 +14,15 @@ directusToData({
         projects.forEach((project) => {
             const file = `src/projects/${project.title}.md`;
             project.layout = "project.pug";
+
+            project.titleOverride = `${project.title} - Project - Denperidge.com`;
             
             const data = JSON.stringify(project, null, 2);
             const markdown = 
                 `---json
                 ${data}
                 ---
-                # ${project.title}
+                # [Projects/](..) ${project.title}
                 ${project.intro}
 
                 ## Achievements

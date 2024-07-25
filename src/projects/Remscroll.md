@@ -21,10 +21,11 @@
 "achievements": "- Albeit basic, there's some design. I kind of still like the icon.\n- It worked!\n",
 "future_improvements": "- Unmaintained, it might require some reworking for modern browsers\n- Old design & codebase\n",
 "path": "remscroll",
-"layout": "project.pug"
+"layout": "project.pug",
+"titleOverride": "Remscroll - Project - Denperidge.com"
 }
 ---
-# Remscroll
+# [Projects/](..) Remscroll
 A friend was going down a list, which required clicking a load more button. So some code later, they could press a button to save their position, and automatically click the required button when opening the site up again!
 
 ## Achievements

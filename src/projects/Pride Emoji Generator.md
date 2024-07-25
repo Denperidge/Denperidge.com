@@ -19,10 +19,11 @@
 "achievements": "- Uses PIL and svg shapes to create a bunch of transparent emojis\n- GitHub Releases for easy downloads\n",
 "future_improvements": "- Could do with a web interface\n- GitHub Releases are done manually\n",
 "path": "pride-emoji-generator",
-"layout": "project.pug"
+"layout": "project.pug",
+"titleOverride": "Pride Emoji Generator - Project - Denperidge.com"
 }
 ---
-# Pride Emoji Generator
+# [Projects/](..) Pride Emoji Generator
 The pronouns.page website has a curated selection of flags. I want emojis of them. I don't want to manually do that for every single one though. So let's use a Python script!
 
 ## Achievements
