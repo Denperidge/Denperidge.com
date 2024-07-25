@@ -7,7 +7,9 @@
 "C#",
 "HTML",
 "CSS",
-"JavaScript"
+"JavaScript",
+"Node.js",
+"Video game stuff"
 ],
 "title": "xPortable",
 "hrefs": [
@@ -17,20 +19,22 @@
 }
 ],
 "description": "Turn your phone a functional game controller, without installing an app on it.",
-"intro": "The Jackbox party pack games have the unique feature of anyone's phone being easily and quickly useable as a controller for their games. But what if you could have that functionality for nearly every controller supported game?",
-"achievements": "- Only an install on the Windows PC, but none on the phones!\n- It worked!\n- Thanks to the external driver library used, it popped up like a regular Xbox360 controller.\n",
+"intro": "The Jackbox party pack games have the incredible feature of anyone's phone being useable as a controller. But what if you could have that functionality for nearly every controller supported game?",
+"achievements": "- A GUI on Windows starts a webserver that phones can browse to\n- This website (without user input necessary) uses websockets to connect to the computer\n- Thanks to the ViGEm driver, it popped up like a regular Xbox360 controller, with on-screen buttons doing the corresponding inputs in game\n- It worked!\n- Only an install on the Windows PC, but none on the phones!\n",
 "future_improvements": "- Only works on Windows\n- Due to being on a touch screen, there are some limitations to weird simultaneous button inputs\n- No README\n",
 "path": "xportable",
 "layout": "project.pug"
 }
 ---
 # xPortable
-The Jackbox party pack games have the unique feature of anyone's phone being easily and quickly useable as a controller for their games. But what if you could have that functionality for nearly every controller supported game?
+The Jackbox party pack games have the incredible feature of anyone's phone being useable as a controller. But what if you could have that functionality for nearly every controller supported game?
 
 ## Achievements
-- Only an install on the Windows PC, but none on the phones!
+- A GUI on Windows starts a webserver that phones can browse to
+- This website (without user input necessary) uses websockets to connect to the computer
+- Thanks to the ViGEm driver, it popped up like a regular Xbox360 controller, with on-screen buttons doing the corresponding inputs in game
 - It worked!
-- Thanks to the external driver library used, it popped up like a regular Xbox360 controller.
+- Only an install on the Windows PC, but none on the phones!
 
 
 ## Future improvements

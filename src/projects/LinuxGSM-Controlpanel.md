@@ -4,7 +4,9 @@
 "sort": null,
 "tags": [
 "Python",
-"Django"
+"Django",
+"Video game stuff",
+"Archive"
 ],
 "title": "LinuxGSM-Controlpanel",
 "hrefs": [

@@ -8,7 +8,10 @@
 "CI",
 "GitHub",
 "GitHub Pages",
-"TypeScript"
+"TypeScript",
+"Static Site Generators",
+"Node.js",
+"Open Summer of Code"
 ],
 "title": "OSOC Interlink",
 "hrefs": [

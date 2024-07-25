@@ -11,7 +11,10 @@
 "JavaScript",
 "Eleventy",
 "GitHub",
-"Static Site Generators"
+"Static Site Generators",
+"CI",
+"Accessibility",
+"Node.js"
 ],
 "title": "Cats Eleventy Starter",
 "hrefs": [

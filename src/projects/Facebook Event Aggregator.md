@@ -11,7 +11,8 @@
 "JavaScript",
 "GitHub",
 "CI",
-"Testing"
+"Testing",
+"Static Site Generators"
 ],
 "title": "Facebook Event Aggregator",
 "hrefs": [

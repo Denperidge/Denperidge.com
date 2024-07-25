@@ -5,7 +5,8 @@
 "tags": [
 "Queer",
 "Image Editing",
-"Contribution"
+"Contribution",
+"Archive"
 ],
 "title": "Pride Emojis",
 "hrefs": [
