@@ -1,6 +1,7 @@
 {
   "name": "denperidge-dot-com",
   "description": "My website! It has links! Blogs!",
+  "type": "module",
   "version": "0.0.1",
   "author": "Denperidge <denperidge@gmail.com>",
   "license": "MIT",
@@ -10,15 +11,17 @@
     "build": "yarn eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-pug": "^1.0.0",
     "@catppuccin/palette": "^0.2.0",
-    "directus-to-data": "^0.3.0",
-    "eleventy-sass": "^2.2.3",
+    "@grimlink/eleventy-plugin-sass": "^1.0.3",
+    "directus-to-data": "^0.7.2",
+    "eleventy-favicons": "^1.0.3",
     "favicons": "^7.1.4",
     "js-yaml": "^4.1.0",
     "jstransformer-markdown-it": "^3.0.0",
     "markdown-it": "^14.1.0",
     "normalize.css": "^8.0.1",
-    "sass": "^1.68.0"
+    "sass": "^1.83.0"
   }
 }

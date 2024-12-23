@@ -1,5 +1,5 @@
 ---
-layout: base/base.pug
+layout: base.pug
 tags: Page
 ---
 <main id="main">
