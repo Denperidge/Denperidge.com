@@ -7,8 +7,12 @@
   "license": "MIT",
   "scripts": {
     "dev": "yarn eleventy --serve",
-    "data": "node .data.mjs",
-    "build": "yarn eleventy"
+    "build": "yarn eleventy",
+    "data": "directus-to-data -c DenperidgeProjects --collection-output src/_data/{{collectionName}}.json",
+    "_schema": "directus-to-data -c DenperidgeProjects --collection-output NO_WRITE --assets-output NO_WRITE",
+    "schema:backup": "yarn _schema --backup-schema .directus.schema.json ",
+    "schema:restore": "yarn _schema --restore-schema .directus.schema.json ",
+    "schema:apply": "yarn schema:restore --apply-schema"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
