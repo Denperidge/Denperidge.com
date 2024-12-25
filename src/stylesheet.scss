@@ -41,7 +41,7 @@ body > * {
 }
 
 // Transparent background for readability
-body > main, body > section, body > aside {
+body main, body section, body aside, footer {
     background-color: rgba($l4, 0.7);
 }
 
