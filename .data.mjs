@@ -8,6 +8,7 @@ fs.readdirSync("src/projects/").forEach((file) => {
     }
 });
 directusToData({
+    collectionName: "DenperidgeProjects",
     configFilename: ".directus.json",
     outputFilename: "src/_data/projects.json",
     callback: (projects) => {

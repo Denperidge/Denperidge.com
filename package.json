@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "yarn eleventy --serve",
     "build": "yarn eleventy",
-    "data": "directus-to-data -c DenperidgeProjects --collection-output src/_data/{{collectionName}}.json",
+    "data": "node .data.mjs",
     "_schema": "directus-to-data -c DenperidgeProjects --collection-output NO_WRITE --assets-output NO_WRITE",
     "schema:backup": "yarn _schema --backup-schema .directus.schema.json ",
     "schema:restore": "yarn _schema --restore-schema .directus.schema.json ",
