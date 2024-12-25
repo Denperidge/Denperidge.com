@@ -5,7 +5,7 @@ permalink: projects/
 order: 1
 description: "Some of the projects I've created or worked on!"
 eleventyImport:
-    collections: ["Project", "Active", "Archive", "Neonpastel", "External"]
+    collections: ["Project", "Active", "Archive", "Contribution", "External"]
 ---
 
 mixin project(project)
@@ -24,20 +24,12 @@ main#main
     hr
 
     ul
-        - const otherProjects = collections.Project.filter((project) => project.data.tags.indexOf("Archive") < 0 && project.data.tags.indexOf("Active") < 0 && project.data.tags.indexOf("Neonpastel") < 0 && project.data.tags.indexOf("External") < 0);
+        - const otherProjects = collections.Project.filter((project) => project.data.tags.indexOf("Archive") < 0 && project.data.tags.indexOf("Active") < 0 && project.data.tags.indexOf("Contribution") < 0 && project.data.tags.indexOf("External") < 0);
         each project in otherProjects
-            if !project.data.tags.archive && !project.data.tags.active && !project.data.tags.neonpastel
-                +project(project)
+            +project(project)
         
     hr
 
-    h2 Neonpastel
-
-    ul
-        each project in collections.Neonpastel 
-            +project(project)
-
-    hr
 
     h2 External/professional
     ul
