@@ -15,5 +15,7 @@ yarn dev  # Run a dev server on localhost:8080
 ## Notice
 For links towards projects or resources used in this repository, open [src/credit.md](src/credit.md), or visit [denperidge.com/credit](https://denperidge.com/credit/).
 
+
+gifski -o Beaumot.gif -W 850 filename
 ## License
 The code in this project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more info.
