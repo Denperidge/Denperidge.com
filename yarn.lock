@@ -916,6 +916,13 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
+eleventy-auto-cache-buster@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/eleventy-auto-cache-buster/-/eleventy-auto-cache-buster-0.7.0.tgz#031cea503570d5d658b58293a02b6b9debff57f2"
+  integrity sha512-OcICXm0XwbPJxhrCZyKU2cC3w9ciRUEUl1SBOKgImeroF5OwnaJ2xho/c0V+NRJ+NILXnCq9YR0Yr1dZ+yGP1w==
+  dependencies:
+    glob "^10.3.10"
+
 eleventy-favicons@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/eleventy-favicons/-/eleventy-favicons-1.0.3.tgz#dfaaf8ab5be48f1540f7f56a42ba5cbea600ab15"
@@ -1165,7 +1172,7 @@ glob-parent@^5.1.2, glob-parent@~5.1.2:
   dependencies:
     is-glob "^4.0.1"
 
-glob@^10.3.7:
+glob@^10.3.10, glob@^10.3.7:
   version "10.4.5"
   resolved "https://registry.yarnpkg.com/glob/-/glob-10.4.5.tgz#f4d9f0b90ffdbab09c9d77f5f29b4262517b0956"
   integrity sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==

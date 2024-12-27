@@ -20,6 +20,7 @@
     "@catppuccin/palette": "^0.2.0",
     "@grimlink/eleventy-plugin-sass": "^1.0.3",
     "directus-to-data": "^0.7.2",
+    "eleventy-auto-cache-buster": "^0.7.0",
     "eleventy-favicons": "^1.0.3",
     "favicons": "^7.1.4",
     "js-yaml": "^4.1.0",

@@ -3,7 +3,7 @@ import yaml from "js-yaml";
 import * as sass from "sass";
 import eleventySass from "@grimlink/eleventy-plugin-sass";
 import eleventyFavicons from "eleventy-favicons";
-
+import eleventyAutoCacheBuster from "eleventy-auto-cache-buster";
 
 export const config = {
     dir: {
@@ -34,5 +34,6 @@ export default async function (eleventyConfig) {
         outputPath: "",
         includePaths: ["node_modules"]
     });
+    eleventyConfig.addPlugin(eleventyAutoCacheBuster);
     
 }
